@@ -17,7 +17,7 @@
 %% ================================================================== %% 
 
 \author[L. Mödl, M. Becher, E. Sprünken]{Lukas Mödl, Matthias Becher, Erin Sprünken} 
-\title{R-Kurs: Tag 2} 
+\title{R-Kurs: Tag 3} 
 \date[]{\today}
 
 %% ================================================================== %% 
@@ -123,7 +123,50 @@ Wenn man CSVs in R lädt kann man verschiedene Parameter einstellen, um der Funk
 \end{frame}
 
 %% ================================================================== %%
-\section{Indizierung}
+\section{Deskreptive Statistik}
+
+\begin{frame}{Summary()}
+	\begin{center}
+		\includegraphics{Summary}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Funktionen für die Deskreptive Statistik}
+\begin{columns}[T]
+	\begin{column}{0.5\textwidth}
+		\begin{itemize}
+			\item Mean = \verb+ mean() +
+			\item Median = \verb+ median() +
+			\item Minimum = \verb+ min() +
+			\item Maximum = \verb+ max() +
+			\item Standard Deviation = \verb+ sd() +
+		\end{itemize}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\begin{itemize}
+			\item Variance = \verb+ var() +
+			\item Quantile = \verb+ quantile() +
+			\item Correlation = \verb+ cor() +
+			\item Covariance = \verb+ cov() +
+			\item Crosstable = \verb+ table() +
+		\end{itemize}
+	\end{column}
+\end{columns}
+\end{frame}
+
+
+%% ================================================================== %%
+\section{Datenaufbereitung, Kovertierung und Verwendung}
+\begin{frame}[fragile]{Konvertieren von Daten}
+	\begin{itemize}
+		\item Numeric $\Leftrightarrow$ \verb+as.numeric()+
+		\item Character $\Leftrightarrow$ \verb+as.character()+
+		\item Factor $\Leftrightarrow$ \verb+as.factor()+
+		\item Date $\Leftrightarrow$ \verb+as.Date()+
+		\item Logical $\Leftrightarrow$ \verb+as.logical()+
+	\end{itemize}
+\end{frame}
+
 \begin{frame}[fragile]{Indiziereung}
 	Häufig möchte man nur bestimmte Elemente eines Vektors, einer Liste oder eines Data Frames auswählen. Um das zu tun gibt es mehrere Möglichkeiten. Die direkteste ist es, die Indizes zu verwenden. Angenommen wir haben den Vektor \verb + x <- c(1, 2, 3, 4, 5) +
 	\begin{itemize}
@@ -158,91 +201,29 @@ Data Frame
 
 \end{frame}
 
-%% ================================================================== %%
-\section{Deskreptive Statistik}
-
-\begin{frame}{Summary()}
-	\begin{center}
-		\includegraphics[scale=0.9]{Summary}
-	\end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Funktionen für die Deskreptive Statistik}
-\begin{columns}[T]
-	\begin{column}{0.5\textwidth}
-		\begin{itemize}
-			\item Mean = \verb+ mean() +
-			\item Median = \verb+ median() +
-			\item Minimum = \verb+ min() +
-			\item Maximum = \verb+ max() +
-			\item Standard Deviation = \verb+ sd() +
-		\end{itemize}
-	\end{column}
-	\begin{column}{0.5\textwidth}
-		\begin{itemize}
-			\item Variance = \verb+ var() +
-			\item Quantile = \verb+ quantile() +
-			\item Correlation = \verb+ cor() +
-			\item Covariance = \verb+ cov() +
-			\item Crosstable = \verb+ table() +
-		\end{itemize}
-	\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}[fragile]{Umgang mit NAs}
-	Bei der Berechnung der verschiedenen Statistiken kann es zu Problemen kommen, wenn NAs in den Daten vorhanden sind.\\
-	\begin{itemize}
-			\item Beispiel: \verb+mean(c(1,2,3,4,5,NA))+ gibt als Ausgaben \verb+NA+\\
-	\end{itemize}
-	Das lässt sich leicht lösen, indem man der Funktion den Parameter \verb+rm.na = TRUE+ mitgiebt.\\
-	\begin{itemize}
-			\item Beispiel: \verb+mean(c(1,2,3,4,5,NA), na.rm = TRUE)+ gibt als Ausgabe \verb+3+
-	\end{itemize}
-\end{frame}
-
-%% ================================================================== %%
-\section{Kovertieren und Filtern}
-\begin{frame}[fragile]{Konvertieren von Daten}
-	\begin{itemize}
-		\item Numeric $\Leftrightarrow$ \verb+as.numeric()+
-		\item Character $\Leftrightarrow$ \verb+as.character()+
-		\item Factor $\Leftrightarrow$ \verb+as.factor()+
-		\item Date $\Leftrightarrow$ \verb+as.Date()+
-		\item Logical $\Leftrightarrow$ \verb+as.logical()+
-	\end{itemize}
-\end{frame}
-
-
-
 \begin{frame}[fragile]{Filtern}
 Häufig kommt es vor, dass wir unsere Daten filtern möchten um bespielsweise nur die Männer bzw. Frauen zu untersuchen oder nur Patiente ab einem bestimmten Alter zu betrachten. In R gibt es verschiedene Befehle mit denen man das erreichen kann.
 	\begin{itemize}
-		\item  \verb+==+
+		\item  \verb+which()+
 		\begin{itemize}
-			\item  \verb+data[data$Sex == "W",]+
+			\item  \verb+data[which(data$Sex == "M"),]+
 		\end{itemize}
 		\item  \verb+%in%+
 		\begin{itemize}
-			\item  \verb+data[data$Color %in% c("blue", "red"),]+
+			\item  \verb+data[which(data$Color %in% c("blue", "red"),]+
 		\end{itemize}
 		\item  \verb+subset()+
 		\begin{itemize}
-			\item  \verb+subset(data, Age < 50)+
+			\item  \verb+subset(data, Age < 50,)+
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Logische Operatoren}
-Manchmal möchte man nach mehreren Spalten gleichzeitig filtern. Anstatt das nacheinaner zu tun, kann man auch mehrere Filter mit logischen Operatoren verbinden, die hier einmal vorgestellt werden: \\
-\begin{itemize}
-			\item  Und = \verb+&+
-			\item  Oder = \verb+|+
-			\item Nicht = \verb+!+
-\end{itemize}
-Beispiel:
+\begin{frame}[fragile]{Nach mehreren Sachen gleichzeitig Filtern}
+Manchmal möchte man nach mehreren Spalten gleichzeitig filtern. Anstatt das nacheinaner zu tun, kann man auch mehrere Filter mit "\&" verbinden. \\
+Zum Beispiel:
 	\begin{itemize}
-		\item  \verb+data[data$Sex != "M" & data$Age > 50,]+
+		\item  \verb+data[which(data$Sex == "W" & data$Age > 50),]+
 	\end{itemize}
 \end{frame}
 
