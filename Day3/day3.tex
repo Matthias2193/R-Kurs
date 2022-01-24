@@ -104,27 +104,53 @@
 }
 
 \section{Statistische Tests}
-\begin{frame}[fragile]{Funktionen für statistische Tests}
-\begin{columns}[T]
-	\begin{column}{0.5\textwidth}
-		\begin{itemize}
-			\item T-Test = \verb+ t.test() +
-			\item Chi-Quadrat-Test = \verb+chisq.test() +
-			\item Wilcoxon-Mann-Whitney-Test = \verb+ wilcox.test() +
-			\item Maximum = \verb+ max() +
-			\item Standard Deviation = \verb+ sd() +
-		\end{itemize}
-	\end{column}
-	\begin{column}{0.5\textwidth}
-		\begin{itemize}
-			\item Variance = \verb+ var() +
-			\item Quantile = \verb+ quantile() +
-			\item Correlation = \verb+ cor() +
-			\item Covariance = \verb+ cov() +
-			\item Crosstable = \verb+ table() +
-		\end{itemize}
-	\end{column}
-\end{columns}
+\begin{frame}[fragile]{T-Test}
+\verb+t.test(x,...)+\\
+Parameter:
+	\begin{itemize}
+		\item x = Ein Vektor mit Daten
+		\item y = Ein optionalte Vektor mit Daten, falls man zwei Gruppen vergleichen möchte
+		\item alternative = c("two.sided", "less", "greater")
+		\item mu = Der wahre Mittelwert
+		\item paired = c(TRUE, FALSE)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Beispiel T-Test:}	
+	\begin{center}
+		\includegraphics{OneSampleTtest}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Beispiel T-Test:}	
+	\begin{center}
+		\includegraphics{TwoSampleTtest}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Chi-Quadrat Test:}	
+	\verb +chisq.test()+ \\
+
+	Beispiel: \\
+	\begin{columns}[T]
+		\begin{column}{0.4\textwidth}
+			\includegraphics{tabledata}
+		\end{column}
+		\begin{column}{0.6\textwidth}
+			\includegraphics{chisq}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]{Weitere statistische Tests}
+	\begin{itemize}
+		\item Wilcoxon-Mann-Whitney-Test = \verb+wilcox.test()+
+		\item Fisher Test = \verb+fisher.test+
+		\item McNemar's Test = \verb+mcnemar.test()+
+		\item Binomial Test = \verb+binom.test()+
+		\item ...
+	\end{itemize}
 \end{frame}
 
 %% ================================================================== %%
@@ -182,6 +208,30 @@
 	\end{center}
 \end{frame}
 
+\begin{frame}[fragile]{One-Way ANOVA}
+	\begin{itemize}
+		\item \verb+model <- aov(formula, data)+
+	\end{itemize}	
+	\begin{center}
+		\includegraphics{OneWay}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Two-Way ANOVA}
+	\begin{center}
+		\includegraphics{TwoWay}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Interaction ANOVA}
+	\begin{center}
+		\includegraphics{Interaction}
+	\end{center}
+\end{frame}
+
+
+
+
 %% ================================================================== %%
 \section{Apply-Familie}
 \begin{frame}[fragile]{Apply-Familie}
@@ -232,36 +282,25 @@
 \end{frame}
 
 \begin{frame}[fragile]{sapply()}
-	Mit apply() können wir Funktionen auf alle Zeilen oder Spalten eines DataFrames oder einer Matrix anwenden um zum Beispiel alle Spaltensummen zu berechnen. Die Grundform der Funktion ist:
+	sapply() macht im Grunde das gleiche wie lapply(). Der Unterschied ist, dass sapply() einen Vektor oder eine Matrix zurück gibt, anstatt einer Liste:
 	\begin{itemize}
-		\item \verb+apply(data, margin, function)+
+		\item \verb+sapply(object, function)+
 	\end{itemize}
 	Zum Beispiel:\\
-	\includegraphics{lapply}
-	
+	\begin{center}
+		\includegraphics{sapply}
+	\end{center}
 \end{frame}
 
 \begin{frame}[fragile]{tapply()}
-	Mit apply() können wir Funktionen auf alle Zeilen oder Spalten eines DataFrames oder einer Matrix anwenden um zum Beispiel alle Spaltensummen zu berechnen. Die Grundform der Funktion ist:
+	tapply() erlaubt es uns auf Grundlage von factor levels Gruppenzusammenfassungen zu erstellen. :
 	\begin{itemize}
-		\item \verb+apply(data, margin, function)+
+		\item \verb+tapply(object, index, function)+
 	\end{itemize}
-	Zum Beispiel:
-	\begin{columns}[T]
-		\begin{column}{0.5\textwidth}
-			\includegraphics{Apply}
-		\end{column}
-		\begin{column}{0.4\textwidth}
-			\[
-			\begin{bmatrix}
-			    1 &2 &3 &4\\
-			    5 &6 &7 &8\\
-			    9 &10 &11 &12\\
-			    13 &14 &15 &16\\
-  			\end{bmatrix}
-			\]
-		\end{column}
-	\end{columns}
+	Zum Beispiel:\\
+	\begin{center}
+		\includegraphics{tapply}
+	\end{center}
 	
 \end{frame}
 \end{document}
