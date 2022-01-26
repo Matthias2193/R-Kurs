@@ -104,28 +104,43 @@
 }
 
 \section{Statistische Tests}
-\begin{frame}[fragile]{T-Test}
+
+\begin{frame}[fragile]{Statistische Tests in R}
+	\begin{itemize}
+		\item t-Test = \verb+t.test()+
+		\item Chi-Quadrat Test = \verb+chisq.test()+
+		\item Wilcoxon-Mann-Whitney-Test = \verb+wilcox.test()+
+		\item Fisher Test = \verb+fisher.test()+
+		\item McNemar's Test = \verb+mcnemar.test()+
+		\item Binomial Test = \verb+binom.test()+
+		\item ...
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{t-Test}
 \verb+t.test(x,...)+\\
 Parameter:
 	\begin{itemize}
 		\item x = Ein Vektor mit Daten
-		\item y = Ein optionalte Vektor mit Daten, falls man zwei Gruppen vergleichen möchte
+		\item y = Ein optionalter Vektor mit Daten, falls man zwei Gruppen vergleichen möchte
 		\item alternative = c("two.sided", "less", "greater")
-		\item mu = Der wahre Mittelwert
+		\item mu = Der angenommene Mittelwert unter der Nullhypothese
 		\item paired = c(TRUE, FALSE)
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Beispiel T-Test:}	
+\begin{frame}[fragile]{Beispiel t-Test:}	
 	\begin{center}
 		\includegraphics{OneSampleTtest}
 	\end{center}
 \end{frame}
 
-\begin{frame}[fragile]{Beispiel T-Test:}	
+\begin{frame}[fragile]{Beispiel t-Test:}	
 	\begin{center}
 		\includegraphics{TwoSampleTtest}
 	\end{center}
+Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 \end{frame}
 
 \begin{frame}[fragile]{Chi-Quadrat Test:}	
@@ -143,16 +158,6 @@ Parameter:
 \end{frame}
 
 
-\begin{frame}[fragile]{Weitere statistische Tests}
-	\begin{itemize}
-		\item Wilcoxon-Mann-Whitney-Test = \verb+wilcox.test()+
-		\item Fisher Test = \verb+fisher.test+
-		\item McNemar's Test = \verb+mcnemar.test()+
-		\item Binomial Test = \verb+binom.test()+
-		\item ...
-	\end{itemize}
-\end{frame}
-
 %% ================================================================== %%
 \section{Regressionsanalysen}
 
@@ -163,7 +168,7 @@ Parameter:
 			\begin{center}
 				Y\textasciitilde X1 + X2 + X3 + ... 
 			\end{center}
-		\item Alle Variablen sollen in der Regression verwendet werden:
+		\item Alle Variablen im Datensatz sollen in der Regression verwendet werden:
 			\begin{center}
 				Y\textasciitilde.
 			\end{center}
@@ -174,7 +179,7 @@ Parameter:
 
 \begin{frame}[fragile]{Lineare Regression}
 	\begin{itemize}
-		\item \verb+model <- glm(y~., data = linear_data)+
+		\item \verb+model <- lm(y~., data = linear_data)+
 		\item \verb+summary(model)+
 	\end{itemize}
 			
@@ -235,7 +240,7 @@ Parameter:
 %% ================================================================== %%
 \section{Apply-Familie}
 \begin{frame}[fragile]{Apply-Familie}
-	Die Apply-Familie ist eine Reihe von Funktion in R, die es uns erlaubt eine Funktion auf auf mehrere verschiedenen Inputs nacheinander anzuwenden. Zum Beispiel auf alle Zeilen oder Spalten einer Matrix oder alle Elemente einer Liste. Die verschiedenen Apply-Funktionen sind:  
+	Die Apply-Familie ist eine Reihe von Funktion in R, die es uns erlaubt eine Funktion auf mehrere verschiedenen Inputs nacheinander anzuwenden. Zum Beispiel auf alle Zeilen oder Spalten einer Matrix oder alle Elemente einer Liste. Die verschiedenen Apply-Funktionen sind:  
 	\begin{itemize}
 		\item \verb+apply()+
 		\item \verb+lapply()+
@@ -245,7 +250,7 @@ Parameter:
 \end{frame}
 
 \begin{frame}[fragile]{apply()}
-	Mit apply() können wir Funktionen auf alle Zeilen oder Spalten eines DataFrames oder einer Matrix anwenden um zum Beispiel alle Spaltensummen zu berechnen. Die Grundform der Funktion ist:
+	Mit apply() können wir Funktionen auf alle Zeilen oder Spalten eines Data Frames oder einer Matrix anwenden um zum Beispiel alle Spaltensummen zu berechnen. Die Grundform der Funktion ist:
 	\begin{itemize}
 		\item \verb+apply(data, margin, function)+
 	\end{itemize}
@@ -269,7 +274,7 @@ Parameter:
 \end{frame}
 
 \begin{frame}[fragile]{lapply()}
-	lapply() führt eine Funktion auf jedes Element eines DataFrames, einer Matrix, eines Vektors oder einer Liste aus. Das "l" in lapply() steht dabei für "list" und bezieht sich darauf, dass lapply() immer eine Liste zurück gibt.
+	lapply() führt eine Funktion auf jedes Element eines Data Frames, einer Matrix, eines Vektors oder einer Liste aus. Das "l" in lapply() steht dabei für "list" und bezieht sich darauf, dass lapply() immer eine Liste zurück gibt.
 	\begin{itemize}
 		\item \verb+lapply(object, function)+
 	\end{itemize}
@@ -282,7 +287,7 @@ Parameter:
 \end{frame}
 
 \begin{frame}[fragile]{sapply()}
-	sapply() macht im Grunde das gleiche wie lapply(). Der Unterschied ist, dass sapply() einen Vektor oder eine Matrix zurück gibt, anstatt einer Liste:
+	sapply() macht im Grunde das gleiche wie lapply(). Der Unterschied ist, dass sapply() einen Vektor oder eine Matrix zurück gibt, anstatt eine Liste:
 	\begin{itemize}
 		\item \verb+sapply(object, function)+
 	\end{itemize}
@@ -293,7 +298,7 @@ Parameter:
 \end{frame}
 
 \begin{frame}[fragile]{tapply()}
-	tapply() erlaubt es uns auf Grundlage von factor levels Gruppenzusammenfassungen zu erstellen. :
+	tapply() erlaubt es uns auf Grundlage von factor levels Gruppenzusammenfassungen zu erstellen:
 	\begin{itemize}
 		\item \verb+tapply(object, index, function)+
 	\end{itemize}
