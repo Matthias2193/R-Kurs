@@ -115,7 +115,7 @@
 \begin{frame}[fragile]{Optionen bei read.csv()}
 Wenn man CSVs in R lädt kann man verschiedene Parameter einstellen, um der Funktion zu sagen wie die CSV formatiert ist. Die wichtigsten werden hier vorgestellt:
   \begin{itemize}
-	  \item \verb +header(TRUE/FALSE):+ Zeigt an ob in der CSV Spaltenname in der ersten Reihe stehen
+	  \item \verb +header(TRUE/FALSE):+ Zeigt an, ob in der CSV Spaltennamen in der ersten Reihe stehen
 	  \item \verb +sep:+Welches Zeichen wird verwendet um Spalten zu trennen. Default ist ",". Es werden aber auch häufig ";" oder "\textbackslash t" verwendet
 	  \item \verb +dec:+Welches Zeichen wird bei Dezimalzahlen verwendet "." oder ","
 	  \item	Beispiel: \verb +read.csv("data.csv", header=TRUE, sep=";", dec=",")+
@@ -124,7 +124,7 @@ Wenn man CSVs in R lädt kann man verschiedene Parameter einstellen, um der Funk
 
 %% ================================================================== %%
 \section{Indizierung}
-\begin{frame}[fragile]{Indiziereung}
+\begin{frame}[fragile]{Indizierung}
 	Häufig möchte man nur bestimmte Elemente eines Vektors, einer Liste oder eines Data Frames auswählen. Um das zu tun gibt es mehrere Möglichkeiten. Die direkteste ist es, die Indizes zu verwenden. Angenommen wir haben den Vektor \verb + x <- c(1, 2, 3, 4, 5) +
 	\begin{itemize}
 		\item  Einen bestimmten Wert auswählen $\Leftrightarrow$ \verb+ x[1]+
@@ -134,7 +134,7 @@ Wenn man CSVs in R lädt kann man verschiedene Parameter einstellen, um der Funk
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Indiziereung von Listen und Data Frames}
+\begin{frame}[fragile]{Indizierung von Listen und Data Frames}
 	
 	\begin{columns}[T]
 	\begin{column}{0.5\textwidth}
@@ -142,7 +142,6 @@ Liste
 		\begin{itemize}
 		\item \verb+x[1]+
 		\item \verb+x[[1]]+
-		\item \verb+x[[1]][1]+
 	\end{itemize}
 	\end{column}
 	\begin{column}{0.5\textwidth}
@@ -159,7 +158,7 @@ Data Frame
 \end{frame}
 
 %% ================================================================== %%
-\section{Deskreptive Statistik}
+\section{Deskriptive Statistik}
 
 \begin{frame}{Summary()}
 	\begin{center}
@@ -167,7 +166,7 @@ Data Frame
 	\end{center}
 \end{frame}
 
-\begin{frame}[fragile]{Funktionen für die Deskreptive Statistik}
+\begin{frame}[fragile]{Funktionen für die Deskriptive Statistik}
 \begin{columns}[T]
 	\begin{column}{0.5\textwidth}
 		\begin{itemize}
@@ -188,6 +187,7 @@ Data Frame
 		\end{itemize}
 	\end{column}
 \end{columns}
+Anmerkung: sd() und var() teilen bei der Berechnung durch \verb+n-1+
 \end{frame}
 
 \begin{frame}[fragile]{Umgang mit NAs}
@@ -195,14 +195,14 @@ Data Frame
 	\begin{itemize}
 			\item Beispiel: \verb+mean(c(1,2,3,4,5,NA))+ gibt als Ausgaben \verb+NA+\\
 	\end{itemize}
-	Das lässt sich leicht lösen, indem man der Funktion den Parameter \verb+rm.na = TRUE+ mitgiebt.\\
+	Das lässt sich leicht lösen, indem man der Funktion den Parameter \verb+rm.na = TRUE+ mitgibt.\\
 	\begin{itemize}
 			\item Beispiel: \verb+mean(c(1,2,3,4,5,NA), na.rm = TRUE)+ gibt als Ausgabe \verb+3+
 	\end{itemize}
 \end{frame}
 
 %% ================================================================== %%
-\section{Kovertieren und Filtern}
+\section{Konvertieren und Filtern}
 \begin{frame}[fragile]{Konvertieren von Daten}
 	\begin{itemize}
 		\item Numeric $\Leftrightarrow$ \verb+as.numeric()+
@@ -216,7 +216,7 @@ Data Frame
 
 
 \begin{frame}[fragile]{Filtern}
-Häufig kommt es vor, dass wir unsere Daten filtern möchten um bespielsweise nur die Männer bzw. Frauen zu untersuchen oder nur Patiente ab einem bestimmten Alter zu betrachten. In R gibt es verschiedene Befehle mit denen man das erreichen kann.
+Häufig kommt es vor, dass wir unsere Daten filtern möchten um bespielsweise nur die Männer bzw. Frauen zu untersuchen oder nur Patienten ab einem bestimmten Alter zu betrachten. In R gibt es verschiedene Befehle mit denen man das erreichen kann.
 	\begin{itemize}
 		\item  \verb+==+
 		\begin{itemize}
