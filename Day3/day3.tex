@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{include/chariteBeamer}
 \usepackage{hyperref}
+\usepackage{blkarray}
 \input{include/header2}
 \tikzset{>=latex}
 %\usepackage{amsmath}
@@ -181,10 +182,11 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 	\begin{itemize}
 		\item \verb+model <- lm(y~., data = linear_data)+
 		\item \verb+summary(model)+
+		\item Anmerkung: "0 +" am Anfang der Formel führt zu einer Regression ohne Intercept 
 	\end{itemize}
 			
 	\begin{center}
-		\includegraphics[height=4cm]{LinearRegressionSummary}
+		\includegraphics[height=3.75cm]{LinearRegressionSummary}
 	\end{center}
 \end{frame}
 
@@ -261,12 +263,16 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 		\end{column}
 		\begin{column}{0.4\textwidth}
 			\[
-			\begin{bmatrix}
-			    1 &2 &3 &4\\
-			    5 &6 &7 &8\\
-			    9 &10 &11 &12\\
-			    13 &14 &15 &16\\
-  			\end{bmatrix}
+			\renewcommand\BAextrarowheight{2pt}
+			\begin{blockarray}{*{5}{c}}
+				\begin{block}{[*{4}{c}]{c}}
+				    1 &2 &3 &4&\textcolor{red}{10}\\
+				    5 &6 &7 &8&\textcolor{red}{26}\\
+				    9 &10 &11 &12&\textcolor{red}{42}\\
+				    13 &14 &15 &16&\textcolor{red}{58}\\
+				\end{block}
+				\textcolor{red}{28} & \textcolor{red}{32} & \textcolor{red}{36} & \textcolor{red}{40}
+			\end{blockarray}
 			\]
 		\end{column}
 	\end{columns}
