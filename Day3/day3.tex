@@ -124,7 +124,7 @@
 Parameter:
 	\begin{itemize}
 		\item x = Ein Vektor mit Daten
-		\item y = Ein optionalter Vektor mit Daten, falls man zwei Gruppen vergleichen möchte
+		\item y = Ein optionaler Vektor mit Daten, falls man zwei Gruppen vergleichen möchte
 		\item alternative = c("two.sided", "less", "greater")
 		\item mu = Der angenommene Mittelwert unter der Nullhypothese
 		\item paired = c(TRUE, FALSE)
@@ -145,7 +145,7 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 \end{frame}
 
 \begin{frame}[fragile]{Chi-Quadrat Test:}	
-	\verb +chisq.test()+ \\
+	\verb+chisq.test()+ \\
 
 	Beispiel: \\
 	\begin{columns}[T]
@@ -163,7 +163,7 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 \section{Regressionsanalysen}
 
 \begin{frame}[fragile]{Formeln in R}
-	Um eine Regression durchzuführen müssen wir der Funktion sagen, welche Spalten in unseren Daten die abhängigen Variablen sind und welche Spalte der abhängige Variable ist. Dafür gibt 	es in R die Formelschreibweise:
+	Um eine Regression durchzuführen müssen wir der Funktion sagen, welche Spalten in unseren Daten die unabhängigen Variablen sind und welche Spalte die abhängige Variable ist. Dafür gibt	es in R die Formelschreibweise:
 	\begin{itemize}
 		\item Nur bestimmte Variablen sollen in der Regression verwendet werden:
 			\begin{center}

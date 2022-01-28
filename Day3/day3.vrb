@@ -1,0 +1,10 @@
+\frametitle{tapply()}
+tapply() erlaubt es uns auf Grundlage von factor levels Gruppenzusammenfassungen zu erstellen:
+	\begin{itemize}
+		\item \verb+tapply(object, index, function)+
+	\end{itemize}
+	Zum Beispiel:\\
+	\begin{center}
+		\includegraphics{tapply}
+	\end{center}
+	
