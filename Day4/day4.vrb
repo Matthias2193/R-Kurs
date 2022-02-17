@@ -1,0 +1,17 @@
+\frametitle{Funktion für den BMI Rechner verbessern}
+\begin{verbatim}
+        bmi_rechner <- function(gewicht, groesse = 1.82)
+        {
+            # gewicht in kg
+            # groesse in m
+
+            if(gewicht <= 0 | groesse <= 0)
+            {
+              stop("Gewicht und Größe dürfen nicht <= 0 sein!")
+            }
+            else
+            {
+              bmi <- gewicht / groesse^2
+              return(bmi)
+            }
+    \end{verbatim}
