@@ -199,6 +199,7 @@ Anmerkung: sd() und var() teilen bei der Berechnung durch \verb+n-1+
 	\begin{itemize}
 			\item Beispiel: \verb+mean(c(1,2,3,4,5,NA), na.rm = TRUE)+ gibt als Ausgabe \verb+3+
 	\end{itemize}
+	Mit der Funktion \verb+is.na()+ kann man testen ob sich in einem Vektor, data frame etc. NAs befinden
 \end{frame}
 
 %% ================================================================== %%
@@ -252,7 +253,7 @@ Beispiel:
 
 \begin{frame}[fragile]{Scatterplot}
 	\begin{itemize}
-		\item \verb+ plot(data$Spalte1, data$Spalte2)+
+		\item \verb+plot(data$AufKGr, data$AufKGew)+
 	\end{itemize}
 			
 	\begin{center}
@@ -262,7 +263,7 @@ Beispiel:
 
 \begin{frame}[fragile]{Boxplot}
 	\begin{itemize}
-		\item \verb+boxplot(Spalte1 ~ Spalte2, data)+
+		\item \verb+boxplot(AufKGr ~ VAR0003, data)+
 	\end{itemize}
 			
 	\begin{center}
@@ -272,7 +273,7 @@ Beispiel:
 
 \begin{frame}[fragile]{Histogram}
 	\begin{itemize}
-		\item \verb+hist(norm_sample$X1) +
+		\item \verb+hist(data$AufKGew)+
 	\end{itemize}
 			
 	\begin{center}
@@ -282,7 +283,7 @@ Beispiel:
 
 \begin{frame}[fragile]{Histogram mit Density}
 	\begin{itemize}
-		\item \verb+ hist(norm_sample$X1, probability = T)+ \\ \verb + lines(density(norm_sample$X1))+
+		\item \verb+hist(data$AufKGew, probability = T) + \\ \verb +lines(density(data$AufKGew))+
 	\end{itemize}
 			
 	\begin{center}
@@ -292,11 +293,23 @@ Beispiel:
 
 \begin{frame}[fragile]{Barplot}
 	\begin{itemize}
-		\item \verb+ barplot(Spalte1 ~ Spalte2, data) +
+		\item \verb+ barplot(summary(as.factor(data$Klinik)))+
 	\end{itemize}
 			
 	\begin{center}
 		\includegraphics[height=6.5cm]{Barplot}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Beschriftungen für Plots}
+	Es gibt verschiedene Möglichkeiten Plots anzupassen. Unter anderem kann man Achsenbeschriftungen oder einen Titel einfügen.
+	\begin{itemize}
+		\item Beispiel: \verb+plot(data$AufKGr, data$AufKGew, xlab="Größe,"+
+		\verb+            ylab="Gewicht", main="Scatterplot")+
+	\end{itemize}
+			
+	\begin{center}
+		\includegraphics[height=4.5cm]{AnnotatedPlot}
 	\end{center}
 \end{frame}
 
