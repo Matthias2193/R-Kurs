@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.12.29)  23 FEB 2022 19:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.12.29)  23 FEB 2022 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1590,19 +1590,11 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 140.
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
-
-LaTeX Warning: File `if1.png' not found on input line 4.
-
-
-! Package pdftex.def Error: File `if1.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4   \includegraphics[]{if1.png}
-                                 
-? 
+<if1.png, id=134, 221.32687pt x 89.33376pt>
+File: if1.png Graphic file (type png)
+<use if1.png>
+Package pdftex.def Info: if1.png  used on input line 4.
+(pdftex.def)             Requested size: 221.32631pt x 89.33353pt.
 )
 Overfull \hbox (7.95499pt too wide) has occurred while \output is active
 [] [][][] 
@@ -1618,7 +1610,7 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 147.
 
 [5
 
-]
+ <./if1.png>]
 \openout4 = `day4.vrb'.
 
  (./day4.vrb)
@@ -1662,19 +1654,11 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 183.
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
-
-LaTeX Warning: File `if2.png' not found on input line 4.
-
-
-! Package pdftex.def Error: File `if2.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4   \includegraphics[]{if2.png}
-                                 
-? 
+<if2.png, id=155, 263.98625pt x 122.4575pt>
+File: if2.png Graphic file (type png)
+<use if2.png>
+Package pdftex.def Info: if2.png  used on input line 4.
+(pdftex.def)             Requested size: 263.9856pt x 122.45718pt.
 )
 Overfull \hbox (7.95499pt too wide) has occurred while \output is active
 [] [][][] 
@@ -1690,7 +1674,7 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 190.
 
 [8
 
-]
+ <./if2.png>]
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
@@ -1773,19 +1757,11 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 249.
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
-
-LaTeX Warning: File `for1.png' not found on input line 4.
-
-
-! Package pdftex.def Error: File `for1.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4   \includegraphics[]{for1.png}
-                                  
-? 
+<for1.png, id=181, 215.30438pt x 146.5475pt>
+File: for1.png Graphic file (type png)
+<use for1.png>
+Package pdftex.def Info: for1.png  used on input line 4.
+(pdftex.def)             Requested size: 215.30385pt x 146.54712pt.
 )
 Overfull \hbox (7.95499pt too wide) has occurred while \output is active
 [] [][][] 
@@ -1801,7 +1777,7 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 256.
 
 [12
 
-]
+ <./for1.png>]
 \openout4 = `day4.vrb'.
 
  (./day4.vrb)
@@ -1841,20 +1817,16 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 298.
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
-
-LaTeX Warning: File `while1.png' not found on input line 4.
-
-
-! Package pdftex.def Error: File `while1.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4   \includegraphics[]{while1.png}
-                                    
-? 
+<while1.png, id=203, 176.15813pt x 231.86626pt>
+File: while1.png Graphic file (type png)
+<use while1.png>
+Package pdftex.def Info: while1.png  used on input line 4.
+(pdftex.def)             Requested size: 176.15768pt x 231.86568pt.
 )
+Overfull \vbox (64.24696pt too high) detected at line 305
+ []
+
+
 Overfull \hbox (7.95499pt too wide) has occurred while \output is active
 [] [][][] 
  []
@@ -1869,7 +1841,7 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 305.
 
 [15
 
-]
+ <./while1.png>]
 \openout4 = `day4.vrb'.
 
  (./day4.vrb)
@@ -1909,7 +1881,7 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 330.
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
-<Apply.png, id=215, 166.37157pt x 56.46094pt>
+<Apply.png, id=223, 166.37157pt x 56.46094pt>
 File: Apply.png Graphic file (type png)
 <use Apply.png>
 Package pdftex.def Info: Apply.png  used on input line 9.
@@ -1943,7 +1915,7 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 358.
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
-<lapply.png, id=224, 203.25937pt x 104.64093pt>
+<lapply.png, id=232, 203.25937pt x 104.64093pt>
 File: lapply.png Graphic file (type png)
 <use lapply.png>
 Package pdftex.def Info: lapply.png  used on input line 8.
@@ -1967,7 +1939,7 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 371.
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
-<sapply.png, id=233, 191.9672pt x 67.75313pt>
+<sapply.png, id=241, 191.9672pt x 67.75313pt>
 File: sapply.png Graphic file (type png)
 <use sapply.png>
 Package pdftex.def Info: sapply.png  used on input line 8.
@@ -1991,7 +1963,7 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 382.
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
-<tapply.png, id=241, 417.81094pt x 57.21375pt>
+<tapply.png, id=249, 417.81094pt x 57.21375pt>
 File: tapply.png Graphic file (type png)
 <use tapply.png>
 Package pdftex.def Info: tapply.png  used on input line 8.
@@ -2033,19 +2005,11 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 400.
 \openout4 = `day4.vrb'.
 
  (./day4.vrb
-
-LaTeX Warning: File `func1.png' not found on input line 4.
-
-
-! Package pdftex.def Error: File `func1.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4     \includegraphics[]{func1.png}
-                                     
-? 
+<func1.png, id=262, 125.46875pt x 60.72687pt>
+File: func1.png Graphic file (type png)
+<use func1.png>
+Package pdftex.def Info: func1.png  used on input line 4.
+(pdftex.def)             Requested size: 125.46843pt x 60.7267pt.
 )
 Overfull \hbox (7.95499pt too wide) has occurred while \output is active
 [] [][][] 
@@ -2061,7 +2025,7 @@ Package pdftex.def Info: include/charite_footer.png  used on input line 407.
 
 [23
 
-]
+ <./func1.png>]
 \openout4 = `day4.vrb'.
 
  (./day4.vrb)
@@ -2098,10 +2062,10 @@ Package rerunfilecheck Info: File `day4.out' has not changed.
 (rerunfilecheck)             Checksum: 7A0A00427A7E99ECDEDAB1D9D618A910;398.
  ) 
 Here is how much of TeX's memory you used:
- 41342 strings out of 481239
- 935700 string characters out of 5920376
+ 41282 strings out of 481239
+ 935050 string characters out of 5920376
  1251809 words of memory out of 5000000
- 55660 multiletter control sequences out of 15000+600000
+ 55610 multiletter control sequences out of 15000+600000
  587085 words of font info for 98 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  74i,16n,117p,1608b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2115,10 +2079,10 @@ f/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
 elvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
 o8a.pfb>
-Output written on day4.pdf (24 pages, 397414 bytes).
+Output written on day4.pdf (24 pages, 419715 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
+ 326 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams
  55 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
