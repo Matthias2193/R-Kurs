@@ -4,58 +4,65 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{\textsf R Pakete}{3}{\textsf R Pakete}{0}}
+\headcommand {\sectionentry {1}{Programmierung I:Bedingungen}{3}{Programmierung I:Bedingungen}{0}}
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{0}{3}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@sectionpages {3}{5}}
-\headcommand {\beamer@subsectionpages {3}{5}}
-\headcommand {\sectionentry {2}{Programmierung I: if-else-Anweisung}{6}{Programmierung I: if-else-Anweisung}{0}}
-\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
+\headcommand {\slideentry {1}{0}{4}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {2}{0}{2}{7/7}{}{0}}
+\headcommand {\slideentry {1}{0}{5}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{0}{3}{8/8}{}{0}}
+\headcommand {\slideentry {1}{0}{6}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{0}{4}{9/9}{}{0}}
+\headcommand {\slideentry {1}{0}{7}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@sectionpages {6}{9}}
-\headcommand {\beamer@subsectionpages {6}{9}}
-\headcommand {\sectionentry {3}{Programmierung II: Schleifen}{10}{Programmierung II: Schleifen}{0}}
-\headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
+\headcommand {\beamer@sectionpages {3}{9}}
+\headcommand {\beamer@subsectionpages {3}{9}}
+\headcommand {\sectionentry {2}{Programmierung II: Schleifen}{10}{Programmierung II: Schleifen}{0}}
+\headcommand {\slideentry {2}{0}{1}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{0}{2}{11/11}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{0}{3}{12/12}{}{0}}
+\headcommand {\slideentry {2}{0}{3}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {3}{0}{4}{13/13}{}{0}}
+\headcommand {\beamer@subsectionpages {10}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{13}{while-Schleife}}
+\headcommand {\slideentry {2}{1}{1}{13/13}{while-Schleife}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {3}{0}{5}{14/14}{}{0}}
+\headcommand {\slideentry {2}{1}{2}{14/14}{while-Schleife}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {3}{0}{6}{15/15}{}{0}}
+\headcommand {\slideentry {2}{1}{3}{15/15}{while-Schleife}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@sectionpages {10}{15}}
-\headcommand {\beamer@subsectionpages {10}{15}}
-\headcommand {\sectionentry {4}{Eigene Funktionen}{16}{Eigene Funktionen}{0}}
-\headcommand {\slideentry {4}{0}{1}{16/16}{}{0}}
+\headcommand {\beamer@subsectionpages {13}{15}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{16}{Anmerkungen zu for- und while-Schleifen}}
+\headcommand {\slideentry {2}{2}{1}{16/16}{Anmerkungen zu for- und while-Schleifen}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {4}{0}{2}{17/17}{}{0}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{17}{Die Apply-Familie}}
+\headcommand {\slideentry {2}{3}{1}{17/17}{Die Apply-Familie}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {4}{0}{3}{18/18}{}{0}}
+\headcommand {\slideentry {2}{3}{2}{18/18}{Die Apply-Familie}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {4}{0}{4}{19/19}{}{0}}
+\headcommand {\slideentry {2}{3}{3}{19/19}{Die Apply-Familie}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {4}{0}{5}{20/20}{}{0}}
+\headcommand {\slideentry {2}{3}{4}{20/20}{Die Apply-Familie}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {4}{0}{6}{21/21}{}{0}}
+\headcommand {\slideentry {2}{3}{5}{21/21}{Die Apply-Familie}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {4}{0}{7}{22/22}{}{0}}
+\headcommand {\beamer@sectionpages {10}{21}}
+\headcommand {\beamer@subsectionpages {17}{21}}
+\headcommand {\sectionentry {3}{Eigene Funktionen}{22}{Eigene Funktionen}{0}}
+\headcommand {\slideentry {3}{0}{1}{22/22}{}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@partpages {1}{22}}
-\headcommand {\beamer@subsectionpages {16}{22}}
-\headcommand {\beamer@sectionpages {16}{22}}
-\headcommand {\beamer@documentpages {22}}
-\headcommand {\gdef \inserttotalframenumber {22}}
+\headcommand {\slideentry {3}{0}{2}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{0}{3}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@partpages {1}{24}}
+\headcommand {\beamer@subsectionpages {22}{24}}
+\headcommand {\beamer@sectionpages {22}{24}}
+\headcommand {\beamer@documentpages {24}}
+\headcommand {\gdef \inserttotalframenumber {24}}

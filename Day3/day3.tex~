@@ -280,8 +280,7 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
          \item \verb+ggplot2+ für schöne Plots \\
           \item \verb+haven+ für das Einlesen von \verb+.sav+-Dateien (SPSS) \\ 
         \item ...
-   \end{itemize}
-\end{frame}	
+   \end{itemize}	
 	
 \end{document}
 %% ================================================================== %%

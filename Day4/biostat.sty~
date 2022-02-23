@@ -120,4 +120,4 @@
 }{\end{tcolorbox}\end{center}}
 
 
-\newtcblisting{Rcode}{colback=blue!50!black, colupper=white,colframe=gray!65!black,listing only, listing options={style=tcblatex,language=R,escapeinside=@@,}}
+\newtcblisting{Rcode}{colback=blue!50!black, colupper=white,colframe=gray!65!black,listing only, listing options={style=tcblatex,language=R,escapeinside=@@,}, title={\textcolor{orange}{\Huge{$\bullet$}}{\textcolor{gray}{\Huge{$\bullet\bullet$}}}}, every listing line={\textcolor{orange}{\small\ttfamily >} }}

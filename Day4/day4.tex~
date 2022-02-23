@@ -289,7 +289,7 @@ Die andere wesentliche Schleife ist die while-Schleife. Im Gegensatz zur for-Sch
       \node[rectangle, draw, right of=n3, node distance=4cm, fill=blue!50!white] (n5) {\footnotesize \verb+x >= 0+};
       \draw[->] (n0) to (n1);
       \coordinate[below of=n1, node distance=1.35cm] (aux4);
-      \coordinate[below of=n3, node distance=1cm] (aux5);
+      \coordinate[below of=n3, node distance=2cm] (aux5);
       \draw[->] (n1.south) -- (aux4) -| (n5.north);
       \draw[->] (n3) to (n5);
       \draw[->] (n5) |- node[anchor=west]{\footnotesize ja} (aux5) -| (n3);
