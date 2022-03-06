@@ -105,7 +105,7 @@
 }
 
 
-\section{Programmierung I:Bedingungen}
+\section{Programmierung I: Bedingungen}
 
 \begin{frame}[fragile]{Konzeption if-Anweisung}
     Möchte man einen Codeblock abhängig von einem bestimmten Wert ausführen oder nicht, muss eine if-Anweisung verwendet werden. if-Anweisungen definieren einen Codeblock, der nur dann ausgeführt wird, wenn die übergebene Bedingung wahr ist. \bigskip\\
@@ -217,9 +217,9 @@
       \coordinate[below of=n1, node distance=1.25cm] (aux3);
       \draw[->] (n1.south) -- (aux3) -| (n2.north);
       \draw[->] (n2) to (n3);
-      \draw[->] (n3) to (n5);
-      \draw[->] (n5) |- node[anchor=west]{\footnotesize ja} (n4);
-      \draw[->] (n4) to (n3);
+      \draw[->] (n5) to node[anchor=north]{\footnotesize ja} (n3);
+      \draw[<-] (n5) |- (n4);
+      \draw[->] (n3) to (n4);
       \draw[->] (n5.east) -| node[anchor=south west]{\footnotesize nein} (nx.south);
     \end{tikzpicture}
 \end{frame}
@@ -241,9 +241,9 @@
       \coordinate[below of=n1, node distance=1.25cm] (aux3);
       \draw[->] (n1.south) -- (aux3) -| (n2.north);
       \draw[->] (n2) to (n3);
-      \draw[->] (n3) to (n5);
-      \draw[->] (n5) |- node[anchor=west]{\footnotesize ja} (n4);
-      \draw[->] (n4) to (n3);
+      \draw[<-] (n3) to node[anchor=north]{\footnotesize ja} (n5);
+      \draw[<-] (n5) |- (n4);
+      \draw[->] (n3) to (n4);
       \draw[->] (n5.east) -| node[anchor=south west]{\footnotesize nein} (nx.south);
     \end{tikzpicture}
 \end{frame}
