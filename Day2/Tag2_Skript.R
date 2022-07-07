@@ -115,7 +115,21 @@ lines(density(data$Height))
 
 table(data$Augenfarbe)
 barplot(table(data$Augenfarbe))
-#xlim und ylim für Min und Max Axenwerte
+
+#Kaplan-Meier
+library(survival)
+data_vet <- veteran
+km_fit <- survfit(Surv(time, status) ~ 1, data=data_vet)
+plot(km_fit)
+library(survminer)
+ggsurvplot(km_fit)
+#By treatment
+km_fit <- survfit(Surv(time, status) ~ trt, data=data_vet)
+plot(km_fit)
+ggsurvplot(km_fit)
+
+
+  #xlim und ylim für Min und Max Axenwerte
 barplot(table(data$Augenfarbe), ylim = c(0, 60))
 
 plot(data$Weight, data$Height, xlab = "Gewicht", ylab = "Größe", main = "Größe-Gewicht-Scatterplot")
