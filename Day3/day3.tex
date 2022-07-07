@@ -149,11 +149,11 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 
 	Beispiel: \\
 	\begin{columns}[T]
-		\begin{column}{0.4\textwidth}
-			\includegraphics{tabledata}
+		\begin{column}{0.5\textwidth}
+			\includegraphics[width=7.5cm]{tabledata}
 		\end{column}
-		\begin{column}{0.6\textwidth}
-			\includegraphics{chisq}
+		\begin{column}{0.5\textwidth}
+			\includegraphics[width=7.5cm]{chisq}
 		\end{column}
 	\end{columns}
 \end{frame}
@@ -180,7 +180,7 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 
 \begin{frame}[fragile]{Lineare Regression}
 	\begin{itemize}
-		\item \verb+model <- lm(y~., data = linear_data)+
+		\item \verb"model <- lm(Weight~Age+Sex+Height+Klinik, data =data)"
 		\item \verb+summary(model)+
 		\item Anmerkung: "0 +" am Anfang der Formel führt zu einer Regression ohne Intercept 
 	\end{itemize}
@@ -194,7 +194,7 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 	\begin{columns}[T]
 		\begin{column}{0.6\textwidth}
 			\begin{itemize}
-				\item \verb+plot(linear_data$x, linear_data$y)+
+				\item \verb+plot(data$Height,data$Weight)+
 				\item \verb+abline(model)+
 			\end{itemize}
 		\end{column}
@@ -265,24 +265,28 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Beispiel: Installation und Laden des \textsf R Pakets \texttt{MASS}}
+\begin{frame}[fragile]{Beispiel: Installation und Laden des \textsf R Pakets \texttt{MASS}}
     \begin{center}
         \includegraphics[width=\textwidth, keepaspectratio]{pakete.png}
     \end{center}
 \end{frame}
 
+
 \begin{frame}[fragile]{Empfehlenswerte Pakete}
-      \begin{itemize}
-          \item \verb+MatchIt+ für Propensity Score Matching 
-          \item \verb+MASS+ für Negativ-binomiale Regression \\
-          \item \verb+lmer+ bzw. \verb+lme4+ für Mixed-Models \\
-          \item \verb+pwr+ für Power-Analyse und insbesondere zur Fallzahlplanung \\
-         \item \verb+ggplot2+ für schöne Plots \\
-          \item \verb+haven+ für das Einlesen von \verb+.sav+-Dateien (SPSS) \\ 
-        \item ...
-   \end{itemize}
-\end{frame}	
+	\begin{itemize}
+		\item \verb+MatchIt+ für Propensity Score Matching 
+	          \item \verb+MASS+ für Negativ-binomiale Regression \\
+	          \item \verb+lmer+ bzw. \verb+lme4+ für Mixed-Models \\
+	          \item \verb+pwr+ für Power-Analyse und insbesondere zur Fallzahlplanung \\
+	          \item \verb+ggplot2+ für schöne Plots \\
+	          \item \verb+haven+ für das Einlesen von \verb+.sav+-Dateien (SPSS) \\ 
+	          \item ...
+	\end{itemize}
+\end{frame}
 	
+
+
+
 \end{document}
 %% ================================================================== %%
 %% ================================================================== %% 
