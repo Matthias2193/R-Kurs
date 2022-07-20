@@ -253,7 +253,7 @@ Beispiel:
 
 \begin{frame}[fragile]{Scatterplot}
 	\begin{itemize}
-		\item \verb+plot(data$AufKGr, data$AufKGew)+
+		\item \verb+plot(data$Height, data$Weight)+
 	\end{itemize}
 			
 	\begin{center}
@@ -263,7 +263,7 @@ Beispiel:
 
 \begin{frame}[fragile]{Boxplot}
 	\begin{itemize}
-		\item \verb+boxplot(AufKGr ~ VAR0003, data)+
+		\item \verb+boxplot(ata$Sex == 0,]$Height, data[data$Sex == 1,]$Heigh)+
 	\end{itemize}
 			
 	\begin{center}
@@ -273,7 +273,7 @@ Beispiel:
 
 \begin{frame}[fragile]{Histogram}
 	\begin{itemize}
-		\item \verb+hist(data$AufKGew)+
+		\item \verb+hist(data$Weight)+
 	\end{itemize}
 			
 	\begin{center}
@@ -283,7 +283,7 @@ Beispiel:
 
 \begin{frame}[fragile]{Histogram mit Density}
 	\begin{itemize}
-		\item \verb+hist(data$AufKGew, probability = T) + \\ \verb +lines(density(data$AufKGew))+
+		\item \verb+hist(data$Weight, probability = T) + \\ \verb +lines(density(data$Weight))+
 	\end{itemize}
 			
 	\begin{center}
@@ -334,7 +334,7 @@ Beispiel:
 \begin{frame}[fragile]{Beschriftungen für Plots}
 	Es gibt verschiedene Möglichkeiten Plots anzupassen. Unter anderem kann man Achsenbeschriftungen oder einen Titel einfügen.
 	\begin{itemize}
-		\item Beispiel: \verb+plot(data$AufKGr, data$AufKGew, xlab="Größe,"+
+		\item Beispiel: \verb+plot(data$Height, data$Weight, xlab="Größe,"+
 		\verb+            ylab="Gewicht", main="Scatterplot")+
 	\end{itemize}
 			

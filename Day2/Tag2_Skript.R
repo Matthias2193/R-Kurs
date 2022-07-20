@@ -80,7 +80,7 @@ summary(data)
 
 # Filtern mit ==
 frauen <- data[data$Sex == 1, c("Sex","Age")]
-blonde <- data[data$Haarfarbe == "blond", ]
+blonde_personen <- data[data$Haarfarbe == "blond", ]
 
 #Filtern mit %in%
 blonde_oder_schwarz <- data[data$Haarfarbe %in% c("blond","schwarz"), ]
