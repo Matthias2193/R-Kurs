@@ -195,7 +195,7 @@ Anmerkung: sd() und var() teilen bei der Berechnung durch \verb+n-1+
 	\begin{itemize}
 			\item Beispiel: \verb+mean(c(1,2,3,4,5,NA))+ gibt als Ausgaben \verb+NA+\\
 	\end{itemize}
-	Das lässt sich leicht lösen, indem man der Funktion den Parameter \verb+rm.na = TRUE+ mitgibt.\\
+	Das lässt sich leicht lösen, indem man der Funktion den Parameter \verb+na.rm = TRUE+ mitgibt.\\
 	\begin{itemize}
 			\item Beispiel: \verb+mean(c(1,2,3,4,5,NA), na.rm = TRUE)+ gibt als Ausgabe \verb+3+
 	\end{itemize}
@@ -240,6 +240,12 @@ Manchmal möchte man nach mehreren Spalten gleichzeitig filtern. Anstatt das nac
 			\item  Und = \verb+&+
 			\item  Oder = \verb+|+
 			\item Nicht = \verb+!+
+\end{itemize}
+Dazu gibt es ausdrücke, die weitere Informationen geben:
+\begin{itemize}
+			\item all(x) $\Leftrightarrow$ prüft, ob ein logischer Vektor x an allen Elementen \verb+TRUE+ ist
+			\item any(x) $\Leftrightarrow$ prüft, ob ein logischer Vektor x and mindestens einer Stelle \verb+TRUE+ ist
+			\item which(x) $Leftrightarrow$ prüft, an welchen Stellen ein logischer Vektor x \verb+TRUE+ ist
 \end{itemize}
 Beispiel:
 	\begin{itemize}
