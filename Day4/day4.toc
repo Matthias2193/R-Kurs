@@ -1,4 +1,0 @@
-\babel@toc {english}{}
-\beamer@sectionintoc {1}{Programmierung I: Bedingungen}{3}{0}{1}
-\beamer@sectionintoc {2}{Programmierung II: Schleifen}{10}{0}{2}
-\beamer@sectionintoc {3}{Eigene Funktionen}{22}{0}{3}

@@ -1,8 +1,0 @@
-\frametitle{Anmerkungen zur Definition eigener Funktionen}
-\begin{itemize}
-    \item Das Setzen das geschweiften Klammern \verb+{+ und \verb+}+ ist essenziell!
-    \item Werden Argumente spezifiziert, müssen die bei jedem Aufruf der Funktion übergeben werden\\Eine Ausnahme bilden freie Variablen, die innerhalb der runden Klammern des Schlüsselworts \verb+function()+ mittels \verb+=+ initialisiert wurden
-    \item Sollen mehrere freie Variablen übergeben werden, müssen diese mit Komma getrennt werden
-    \item Sofern möglich \textsf R vektorisiert Funktionen automatisch, d.h. wird ein Vektor oder eine Matrix als Argument übergeben, wird die Funktion auf jedes Element einzeln angewendet
-    \item Soll eine Funktion keinen Wert zurückgeben, kann auf \verb+return+ verzichtet werden
-  \end{itemize}

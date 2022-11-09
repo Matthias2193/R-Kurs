@@ -1,9 +1,0 @@
-    x <- 2
-
-    if(x <= 3)
-    {
-      print("x ist kleiner als 3")
-    }
-
-    y <- x^2
-  
