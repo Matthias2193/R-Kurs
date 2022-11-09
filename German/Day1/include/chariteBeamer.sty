@@ -1,0 +1,191 @@
+%% ========================================================
+%% START
+%% ========================================================
+%% Beamer Template wird geladen
+%% N{\"u}tzliche Pakete
+
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{tikz, pgf, pgfbaseshapes}
+\usetikzlibrary{arrows}
+\usetikzlibrary{trees}
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{threeparttable}
+\usepackage{color}
+\usepackage{booktabs}
+\usetikzlibrary{arrows,shapes,trees,backgrounds}
+\usepackage[scaled=.90]{helvet} 
+\usepackage{sidecap}
+\renewcommand{\thefootnote}{}
+\renewcommand{\footnoterule}{}
+\usepackage{colortbl}
+\newcommand{\vs}{$\vdots$}
+\newcommand{\ra}{$\rightarrow$}
+\addto\captionsngerman{%
+\renewcommand{\figurename}{Abb.}
+\renewcommand{\tablename}{Tab.}
+}
+
+\usepackage{enumitem}
+\setitemize{label=\usebeamerfont*{itemize item}%
+  \usebeamercolor[fg]{itemize item}
+  \usebeamertemplate{itemize item}}
+
+\setlist{itemsep = 2Ex}
+
+
+%% ========================================================
+%% Beamer Template wird geladen
+%% Siehe auch http://www.math.umbc.edu/~rouben/beamer/ f{\~A}{\"\i}{?`}�r den Aufbau.
+\usepackage{xcolor}
+
+%% Farben werden definiert 
+\definecolor{black}{rgb}{0.0,0.0,0.0}
+\definecolor{chariteGray}{RGB}{160, 165, 169}
+\definecolor{chariteBlue}{RGB}{0, 70, 170}
+\definecolor{chariteOrange}{rgb}{0.9490196, 0.5803922, 0.0000000}
+\definecolor{chariteRed}{rgb}{0.7411765, 0.1686275, 0.2}
+\definecolor{chariteGreen}{rgb}{0.0000000, 0.4666667, 0.4588235}
+
+\newcommand{\chariteOrange}[1]{\textcolor{chariteOrange}{#1}}
+\newcommand{\chariteRed}[1]{\textcolor{chariteRed}{#1}}
+\newcommand{\chariteBlue}[1]{\textcolor{chariteBlue}{#1}}
+\newcommand{\chariteGreen}[1]{\textcolor{chariteGreen}{#1}}
+
+%% Farben werden definiert 
+\definecolor{black}{rgb}{0.0,0.0,0.0}
+\definecolor{tihoGray}{rgb}{0.5,0.5,0.5}
+\definecolor{tihoBlue}{rgb}{0,0.4140625,0.69921875}
+\definecolor{tihoOrange}{rgb}{0.9490196, 0.5803922, 0.0000000}
+\definecolor{tihoRed}{rgb}{0.7411765, 0.1686275, 0.2}
+\definecolor{tihoGreen}{rgb}{0.0000000, 0.4666667, 0.4588235}
+
+\newcommand{\tihoOrange}[1]{\textcolor{tihoOrange}{#1}}
+\newcommand{\tihoRed}[1]{\textcolor{tihoRed}{#1}}
+\newcommand{\tihoBlue}[1]{\textcolor{tihoBlue}{#1}}
+\newcommand{\tihoGreen}[1]{\textcolor{tihoGreen}{#1}}
+
+
+%% Grundtheme wird geladen 
+\usetheme{Boadilla} %%
+\usecolortheme[named=chariteBlue]{structure} 
+%%\useoutertheme{infolines} 
+% \setbeamertemplate{footline}[page number]{}
+\setbeamertemplate{footline}{\begin{tikzpicture}
+    \node [inner sep=0pt, anchor=east] (0,0) {
+      \includegraphics[width=\paperwidth,height=0.7cm]{include/charite_footer}};
+    \node [inner sep=0pt, anchor=east] at (-0.5ex,-0ex) {\tiny \insertframenumber{}$\,$|$\,$\inserttotalframenumber};
+\end{tikzpicture}}
+
+\setbeamertemplate{frametitle}{{\tiny ~}\vskip3pt\insertframetitle}
+
+%% Einzelne Umgebungen werden angepasst
+%%\setbeamertemplate{itemize items}[default]
+%%\setbeamertemplate{itemize items}[$\vartriangleright$]
+%% \vartriangleright
+\setbeamertemplate{itemize items}{\color{chariteBlue}$\boldsymbol{\triangleright}$}
+
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{blocks}[rounded][shadow=false] 
+\setbeamertemplate{navigation symbols}{} 
+
+%% Schriftarten werden gesetzt
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamerfont{framesubtitle}{series=\normalfont}
+\setbeamerfont{title}{series=\bfseries, size=\huge}
+%%\setbeamerfont{subtitle}{series=\normalfont}
+\setbeamerfont{subtitle}{series=\bfseries, size=\Large}
+\setbeamerfont{alerted text}{series=\normalfont}
+
+%% Logo wird geladen
+%%\pgfdeclareimage[width=0.75cm]{goetLogo}{logoGoettingen} 
+\pgfdeclareimage[width=5cm]{frontUnilogo}{include/Charite_Logo}  
+%\logo{\vspace{-0.25cm} \hspace{12cm} \pgfuseimage{goetLogo} \hspace{0.1cm}}
+\pgfdeclareimage[width=.55cm]{Rlogo}{include/Rlogo}  
+\pgfdeclareimage[width=1.5cm]{RlogoBig}{include/Rlogo}  
+
+
+%% Farben werden festgelegt
+%% Title and subtitle
+\setbeamercolor{frametitle}{fg=chariteBlue}
+\setbeamercolor{framesubtitle}{fg=chariteBlue}
+%% Alert box
+\setbeamercolor{alerted text}{fg=chariteOrange}
+\setbeamercolor{block body alerted}{bg=normal text.bg!85!chariteOrange}
+\setbeamercolor{block title alerted}{use={normal text,alerted text},
+  fg=alerted text.fg!100!normal text.fg,bg=normal text.bg!70!chariteOrange}
+%% example box
+\setbeamercolor{example text}{fg=chariteGreen}
+\setbeamercolor{block body example}{bg=normal text.bg!85!chariteGreen}
+\setbeamercolor{block title example}{use={normal text,example text},
+  fg=example text.fg!100!normal text.fg,bg=normal text.bg!70!chariteGreen}
+%% normal text
+%% \setbeamercolor{normal text}{fg=chariteGray}
+
+
+%% \setbeamercovered{transparent}
+
+
+%% ========================================================
+%% Commands
+
+\newcommand{\colBlue}[1]{\textcolor{chariteBlue}{#1}}
+\newcommand{\colOrange}[1]{\textcolor{chariteOrange}{#1}}
+
+\newcommand{\gap}{\vspace{2Ex}}
+\newcommand{\ngap}[1]{\vspace{#1 Ex}}
+
+
+
+\newcommand{\rArrow}{$\rightarrow\,$}
+
+\newcommand{\lArrow}{$\leftarrow\,$}
+
+
+\newenvironment {window} [1]
+{
+  \begin{center}
+   \begin{minipage}{#1}
+} 
+{
+  \end{minipage}
+  \end{center}
+}
+
+% \newenvironment {wframe} [1][2]
+% {
+%   \begin{frame}
+%     \frametitle{#2}
+%     \begin{window}{#1}
+% } 
+% {
+%   \end{window}
+%   \end{frame}
+% }
+
+
+\newenvironment {itemize0}
+{
+ \begin{itemize}[noitemsep,topsep=4pt,parsep=4pt,partopsep=0pt,itemindent=0pt,
+  leftmargin=12pt]
+} 
+{
+  \end{itemize}
+}
+
+\newcommand{\newSection}[1]{ 
+  \begin{center}
+    \Huge\bf\textcolor{chariteBlue}{#1}
+  \end{center}
+}
+
+\newcommand{\literatur}[1]{\footnote{\hspace{-.58cm}\tiny #1}}
+
+\newcommand{\rlogo}{\pgfuseimage{Rlogo}\;}
+\newcommand{\rlogoBig}{\pgfuseimage{RlogoBig}\;}
+
+%% ========================================================
+%% FINISH
+%% ========================================================
