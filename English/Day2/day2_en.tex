@@ -19,7 +19,6 @@
 
 \author[L. Mödl, M. Becher, E. Sprünken]{Lukas Mödl, Matthias Becher, Erin Sprünken} 
 \title{R-Course: Day 2} 
-\date[]{\today}
 
 %% ================================================================== %% 
 \setbeamercolor*{mycol}{bg=chariteGray, fg=chariteBlue}
@@ -192,7 +191,7 @@ Remark: sd() und var() divide by \verb+n-1+
 \end{frame}
 
 \begin{frame}[fragile]{Handling of NAs}
-	When computing different statistics, NAs can pose a problem to that.\\
+	When computing different statistics, NAs can pose a problem.\\
 	\begin{itemize}
 			\item Example: \verb+mean(c(1,2,3,4,5,NA))+ returns \verb+NA+\\
 	\end{itemize}
@@ -246,7 +245,7 @@ Furthermore, there are functions simplifying operations:\\
 \begin{itemize}
 			\item all(x) $\Leftrightarrow$ checks, whether a logical vector contains only \verb+TRUE+ 
 			\item any(x) $\Leftrightarrow$ checks, whether a logical vector contains at least one \verb+TRUE+
-			\item which(x) $Leftrightarrow$ checks, at which positions a logical vector contains x \verb+TRUE+
+			\item which(x) $\Leftrightarrow$ checks, at which positions a logical vector contains \verb+TRUE+
 \end{itemize}
 Example:
 	\begin{itemize}
@@ -270,7 +269,7 @@ Example:
 
 \begin{frame}[fragile]{Boxplot}
 	\begin{itemize}
-		\item \verb+boxplot(ata$Sex == 0,]$Height, data[data$Sex == 1,]$Height)+
+		\item \verb+boxplot(data$Sex == 0,]$Height, data[data$Sex == 1,]$Height)+
 	\end{itemize}
 			
 	\begin{center}
