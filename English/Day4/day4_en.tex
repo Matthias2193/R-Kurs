@@ -20,7 +20,6 @@
 
 \author[L. Mödl, M. Becher, E. Sprünken]{Lukas Mödl, Matthias Becher, Erin Sprünken} 
 \title{R-Course: Day 4} 
-\date[]{\today}
 
 %% ================================================================== %% 
 \setbeamercolor*{mycol}{bg=chariteGray, fg=chariteBlue}
@@ -108,7 +107,7 @@
 
 \section{Programming I: Conditions}
 
-\begin{frame}[fragile]{Conception if-statement}
+\begin{frame}[fragile]{If-Statement}
     If we want to execute a block of code dependent on a certain value, we choose an if-statement. If-statements define such code-blocks, that will only be executed if a certain user-defined condition is true.\bigskip \\
     \begin{tikzpicture}
       \node[draw, trapezium, trapezium left angle=70, trapezium right angle=-70, minimum height=0.75cm, fill=gray!50!white] (n0) {\footnotesize Code};
@@ -134,7 +133,7 @@
       \node[draw, trapezium, trapezium left angle=70, trapezium right angle=-70, right of=aux2, node distance=4.5cm, minimum height=0.5cm,fill=pink] (n2) {\scriptsize\verb+print("x is smaller than 3")+};
       \node[draw, trapezium, trapezium left angle=70, trapezium right angle=-70, right of=n1, node distance=8cm, minimum height=0.5cm, fill=gray!50!white] (n3) {\footnotesize\verb+y <- x^2+};
       \draw[->] (n0) (n0) to (n1);
-      \draw[->] (n1.north) to (aux2) node[anchor=south]{\footnotesize Condition is t rue} to (n2);
+      \draw[->] (n1.north) to (aux2) node[anchor=south]{\footnotesize Condition is true} to (n2);
       \draw[->] (n2) -| (n3);
       \draw[->] (n1.south) to (aux1) node[anchor=north]{\footnotesize Condition is not true} -| (n3);
     \end{tikzpicture}
@@ -147,7 +146,7 @@
   \end{center}
 \end{frame}
 
-\begin{frame}[fragile]{Conception if-else-statement}
+\begin{frame}[fragile]{if-else-statement}
   Sometimes, we don't want to test for only one condition but rather have an either this or that situation. In that case, we use the if-else-statement. \bigskip \\  
     \begin{tikzpicture}
       \node[draw, trapezium, trapezium left angle=70, trapezium right angle=-70, minimum height=0.75cm, fill=gray!50!white] (n0) {\footnotesize Code};
@@ -201,7 +200,7 @@
 
 \section{Programming II: Loops}
 
-\begin{frame}[fragile]{Conception for-Loop}
+\begin{frame}[fragile]{for-Loop}
     An important loop in \textsf R is the for-loop. For-loops execute a block of code as often as a certain index variable in an index set (a vector or a list) exists. We construct this by the keyword \verb+for()+ followed by a block of code in curly brackets. The round parentheses are used to determine the index variable and index set. \bigskip \\
     \begin{tikzpicture}
       \node[draw, trapezium, trapezium left angle=70, trapezium right angle=-70, minimum height=0.75cm, fill=gray!50!white] (n0) {\footnotesize Code};
@@ -258,7 +257,7 @@
 
 \subsection*{while-Loop}
 
-\begin{frame}[fragile]{Conception while-Loop}
+\begin{frame}[fragile]{while-Loop}
 	Another elementary loop is the while-loop. Contrary to the for-loop it executes code \textit{while} a certain condition is true. It is constructed using the keyword \verb+while()+ followed by a block of code in curly brackets. Within the round parentheses the condition is given. \bigskip \\
    \begin{tikzpicture}
       \node[draw, trapezium, trapezium left angle=70, trapezium right angle=-70, minimum height=0.75cm, fill=gray!50!white] (n0) {\footnotesize Code};
@@ -309,7 +308,7 @@
 
 \begin{frame}[fragile]{Remarks to for- and while-Loops}
   \begin{itemize}
-    \item The brackets \verb+{+ und \verb+}+ are essential!
+    \item The brackets \verb+{+ and \verb+}+ are essential!
     \item Beware of infinite loops!
     \item Any for-loop can be converted into a while loop and vice versa.
     \item Using \verb+break+ a loop can be terminated
@@ -395,7 +394,7 @@
 
 \section{Custom Functions}
 
-\begin{frame}[fragile]{Conception of Custom Functions}
+\begin{frame}[fragile]{Custom Functions}
     So far, we only used pre-defined functions, as for example \verb+t.test+. However, \textsf R allows us to write our own functions. \bigskip \\
 Functions have an own datatype that is initalized with the keyword \verb+function()+, followed by a block of code in curly brackets. Within the round parentheses we can define variables freely, which are interpreted as function arguments.
 \end{frame}
