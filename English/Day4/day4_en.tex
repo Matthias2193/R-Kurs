@@ -20,6 +20,7 @@
 
 \author[L. Mödl, M. Becher, E. Sprünken]{Lukas Mödl, Matthias Becher, Erin Sprünken} 
 \title{R-Course: Day 4} 
+\date[]{\today}
 
 %% ================================================================== %% 
 \setbeamercolor*{mycol}{bg=chariteGray, fg=chariteBlue}
@@ -107,7 +108,7 @@
 
 \section{Programming I: Conditions}
 
-\begin{frame}[fragile]{If-Statement}
+\begin{frame}[fragile]{if-statement}
     If we want to execute a block of code dependent on a certain value, we choose an if-statement. If-statements define such code-blocks, that will only be executed if a certain user-defined condition is true.\bigskip \\
     \begin{tikzpicture}
       \node[draw, trapezium, trapezium left angle=70, trapezium right angle=-70, minimum height=0.75cm, fill=gray!50!white] (n0) {\footnotesize Code};
@@ -308,7 +309,7 @@
 
 \begin{frame}[fragile]{Remarks to for- and while-Loops}
   \begin{itemize}
-    \item The brackets \verb+{+ and \verb+}+ are essential!
+    \item The brackets \verb+{+ und \verb+}+ are essential!
     \item Beware of infinite loops!
     \item Any for-loop can be converted into a while loop and vice versa.
     \item Using \verb+break+ a loop can be terminated
@@ -362,7 +363,7 @@
 	\begin{itemize}
 		\item \verb+lapply(object, function)+
 	\end{itemize}
-	Zum Beispiel:\\
+	For example:\\
 	\begin{center}
 		\includegraphics{lapply}
 	\end{center}
@@ -375,7 +376,7 @@
 	\begin{itemize}
 		\item \verb+sapply(object, function)+
 	\end{itemize}
-	Zum Beispiel:\\
+	For example:\\
 	\begin{center}
 		\includegraphics{sapply}
 	\end{center}
@@ -386,7 +387,7 @@
 	\begin{itemize}
 		\item \verb+tapply(object, index, function)+
 	\end{itemize}
-	Zum Beispiel:\\
+	For example:\\
 	\begin{center}
 		\includegraphics{tapply}
 	\end{center}
@@ -412,7 +413,7 @@ Functions have an own datatype that is initalized with the keyword \verb+functio
     \item If you specify function arguments, the user must specify them with each call of the function. \\
 An exception is, if we provide default values within the parentheses by initializing the argument directly with \verb+=+
     \item If your function takes more than one argument, you must separate the arguments with a comma 
-    \item \textsf R tries to vectorize automatically (if posssible), meaning that if a vector or matrix is given as an argument, the function will try to apply the function on each element separately.
+    \item \textsf R tries to vectorize automatically (if possible), meaning that if a vector or matrix is given as an argument, the function will try to apply the function on each element separately.
     \item If a function is not meant to return anything, then the \verb+return()+ statement can be omitted.
   \end{itemize}
 \end{frame}
