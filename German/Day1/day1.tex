@@ -1,13 +1,12 @@
-\documentclass[xcolor=dvipsnames, aspectratio = 169]{beamer}
-\usepackage[english]{babel} %% english
+\documentclass[aspectratio = 169]{chariteBeamer}
+\usepackage[german]{babel} %% english
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{include/chariteBeamer}
+
 \usepackage{hyperref}
-\input{include/header2}
+
 \tikzset{>=latex}
-%\usepackage{amsmath}
-%\usetikzlibrary{shadows}
+
 \usepackage[edges]{forest}
 \usetikzlibrary{positioning}
 \usepackage{biostat}
@@ -18,91 +17,22 @@
 %% ================================================================== %% 
 
 \author[L. Mödl, M. Becher, E. Sprünken]{Lukas Mödl, Matthias Becher, Erin Sprünken} 
-\title{R-Kurs: Tag 1} 
-\date[]{\today}
+\title{Tag 1 -- Grundlagen} 
+\place{R-Kurs}
+\email{biometrie-rkurs@charite.de}
+\date[]{Aktualisiert: \today}
 
 %% ================================================================== %% 
-\setbeamercolor*{mycol}{bg=chariteGray, fg=chariteBlue}
 
 \hyphenation{Sam-ples}
 \begin{document}
 
-%% ================================================================== %%
-%% ================================================================== %%
-\setbeamertemplate{footline}{\begin{tikzpicture}
-    \node [inner sep=0pt, anchor=east] (0,0) {
-      \includegraphics[width=\paperwidth,height=0.7cm]{include/charite_footer}};
-    \node [inner sep=0pt, anchor=east] at (-0.5ex,-0ex){};
-\end{tikzpicture}}
-
-\setbeamertemplate{headline}{
-%\leavevmode
-\hspace{-0.49em}\hbox{
-	\begin{beamercolorbox}[wd=1.02\paperwidth,ht=2.25ex,dp=1ex,left]{mycol}%
-    \usebeamerfont{section in head/foot}
-  \end{beamercolorbox}%
-}}
-{
-  \usebackgroundtemplate{ \hspace{-0.5em}\begin{tikzpicture}
-  \node[opacity=0.7, anchor=south] (0,0) {\includegraphics[height=\paperheight, width=1.04\paperwidth]{include/frontmatter.pdf}};
-  \end{tikzpicture}
-} 
-%\frame{\titlepage}
-\begin{frame}
-\centering
-	\vspace{4em}
-	{\Large \textcolor{chariteBlue}{\inserttitle}}\\
-	 \vspace{1em}
-	{\Large \textcolor{black}{\insertauthor \\}} 
-	\vspace{2em}
-	{\footnotesize \textcolor{black}{\insertinstitute \\\vspace{1em} \insertdate}} 
-	\vspace{0em}
-	\begin{figure}[h!]
-		\includegraphics[width=5cm]{include/Charite_Logo.png}
-	\end{figure}
-%	\pgfuseimage{frontUnilogo}
+\begin{frame}[plain]
+    \titlepage%
 \end{frame}
-}
-%% ================================================================== %%
-
-\setbeamertemplate{footline}{\begin{tikzpicture}
-    \node [inner sep=0pt, anchor=east] (0,0) {
-      \includegraphics[width=\paperwidth,height=0.7cm]{include/charite_footer}};
-    \node [inner sep=0pt, anchor=east] at (-0.5ex,-0ex) {\tiny \insertframenumber{}$\,$|$\,$\inserttotalframenumber};
-\end{tikzpicture}}
-
-\setbeamertemplate{headline}{%
-%\leavevmode%
-\hspace{-0.49em}\hbox{
-	\begin{beamercolorbox}[wd=.68\paperwidth,ht=2.25ex,dp=1ex,left]{mycol}%
-    \usebeamerfont{section in head/foot}\hspace*{1em}
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.20\paperwidth,ht=2.25ex,dp=1ex,right]{mycol}%
-    \usebeamerfont{author in head/foot}\insertshortauthor
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.14\paperwidth,ht=2.25ex,dp=1ex,center]{mycol}%
-    \usebeamerfont{date in head/foot}\insertdate
-  \end{beamercolorbox}%
-  }
-}
-
 
 \frame{\tableofcontents}
 
-\setbeamertemplate{headline}{%
-%\leavevmode%
-\hspace{-0.49em}\hbox{
-	\begin{beamercolorbox}[wd=.68\paperwidth,ht=2.25ex,dp=1ex,left]{mycol}%
-    \usebeamerfont{section in head/foot}\hspace*{1em}\thesection. \  \insertsectionhead
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.20\paperwidth,ht=2.25ex,dp=1ex,right]{mycol}%
-    \usebeamerfont{author in head/foot}\insertshortauthor
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.14\paperwidth,ht=2.25ex,dp=1ex,center]{mycol}%
-    \usebeamerfont{date in head/foot}\insertdate
-  \end{beamercolorbox}%
-  }
-}
 
 \section{Einführung}
 \begin{frame}[fragile]{Motivation}
@@ -111,123 +41,15 @@
   \item Handlungsspielraum verglichen mit SPSS, SAS, Stata
   \item Open Source
   \end{itemize}
-%  \begin{tikzpicture}
-%  [[level distance=11mm,
-%  every node/.style = {shape=rectangle, rounded corners,
-%    draw, align=center,
-%    top color=white, bottom color=blue!20}]]
-%  \node {Sample}
-%		child { node {Group 1} }
-%		child { node {Group i}
-%			child { node {Observation 1 (Cluster 1)} }
-%			child { node {Observation j (Cluster j)} }
-%			child { node {Observation $n_i$ (Cluster $n_i$)} }
-%		 }
-%		child { node {Group n} };
-%\end{tikzpicture}
 \end{frame}
-%\begin{frame}[fragile]{Data Structure}
-%%\begin{forest}
-%%for tree={s sep+=3.9em,circle,draw,inner sep=1pt,
-%%    where n children=0{fill=white}{fill=black},
-%%    decision edge label/.style n args=3{
-%%    edge label/.expanded={node[midway,auto=#1,anchor=#2,\forestoption{elo}]{\strut$#3$}}
-%%  },
-%%  decision/.style={if n=1
-%%    {decision edge label={left}{east}{#1}}
-%%    {decision edge label={right}{west}{#1}}
-%%  },
-%%    }
-%% [,label=above:{Samples}
-%%  [,label=above:{Group $1$}
-%%   %[,label=above:{Cluster $[1,n_1]$}
-%%    %[,label=below:{Obs $1$}]
-%%    %[,label=below:{Obs $k$}]
-%%    %[,label=below:{Obs $n_{11m}$}]
-%%   %]
-%%  ]
-%%  [,label=above:{Group $i$}
-%%	[,label=above:{Cluster $1$}
-%%    	[,label=below:{Obs $1$}]
-%%    	[,label=below:{Obs $k$}]
-%%    	[,label=below:{ Obs $m_{i1}$ }]
-%%    ]
-%%   	[,label=above:{Cluster $j$}
-%%    	[name=X,label=below:{Obs $1$}] % \tikz{\node[] (unsichtbarenode1) {};}
-%%    	[name=Y,label=below:{Obs $k$}] % \tikz{\node[] (unsichtbarenode2) {};}
-%%    	[,label=below:{Obs $m_{ij}$}]
-%%    	
-%%    ]
-%%   	[,label=above:{Cluster $n_i$}
-%%    	[,label=below:{Obs $1$}]
-%%    	[,label=below:{Obs $k$}]
-%%   		[,label=below:{Obs $m_{in_i}$}]
-%%    ]
-%%  ]
-%%  [,label=above:{Group $d$}
-%%   %[,label=above:{Cluster $[1,n_n]$}
-%%    %[,label=below:{Obs $1$}]
-%%    %[,label=below:{Obs $k$}]
-%%    %[,label=below:{Obs $n_{11m}$}]
-%%   %]
-%%  ]
-%% ]
-%% %\draw (Y.south) -- (X.south);
-%%\end{forest}
-%\begin{center}
-%\begin{tikzpicture}[align=center, parent anchor=south,child anchor=north,grow=south, level 1/.style={sibling distance=9em, level distance = 4em},
-%level 2/.style={sibling distance=6em}, 
-%level 3/.style={sibling distance=4em}, level distance = 5em]
-%%\tikzset{every node/.style={ball color=orange,circle,text=white}}
-%\tikzset{every node/.style={rectangle, draw=black, rounded corners=0.5em, inner sep=2pt, minimum size = 3em, text width=3em, font=\scriptsize},
-%level 4/.style={rectangle, draw=none, level distance=3.3em, text=red}}
-%\tikzset{edge from parent/.style={draw,solid,thick,black}}
-%\node {Sample}
-%	child {node (v1){Group 1} edge from parent[child anchor=north east]}
-%	child {node[draw=none] (v1left){\Large $\cdots$} edge from parent[draw=none]}
-%	child {node (v2){Group i}
-%		child {node (v11){Cluster 1}
-%			child {node (v111){Obs 1}}
-%			child {node (v112){Obs k}}
-%			child {node (v113){Obs $m_{i1}$}}
-%		}
-%		child {node[draw=none] (v11left){\Large $\cdots$} edge from parent[draw=none]}
-%		child {node (v12){Cluster j}
-%			child {node (v121){Obs 1}}
-%			child {node (v122){Obs k}
-%				child {node[draw=none] (v1221){$\rho$} edge from parent[draw=none]}			
-%			}
-%			child {node (v123){Obs $m_{ij}$}}
-%		}
-%		child {node[draw=none] (v11right){\Large $\cdots$} edge from parent[draw=none]}
-%		child {node (v13){Cluster $n_i$}
-%			child {node (v131){Obs 1}}
-%			child {node (v132){Obs k}}
-%			child {node (v133){Obs $m_{in_i}$}}
-%		}
-%	}
-%	child {node[draw=none] (v1rightt){\Large $\cdots$} edge from parent[draw=none]}
-%	child {node (v3){Group d} edge from parent[child anchor=north west]}
-%;
-%\path[draw=red,dotted, thick] (v121.south)  edge[bend right](v122.south);
-%\path[draw=red,dotted, thick] (v122.south) edge[bend right](v123.south);
-%\path[draw=red,dotted, thick] (v121.south) edge[bend right](v123.south);
-%%\path[draw=black, dotted,very thick] (v1.east) edge (v2.west);
-%%\path[draw=black, dotted,very thick] (v2.east) edge (v3.west);
-%%\draw
-%
-%\end{tikzpicture}
-%\end{center}
-%\end{frame}
 
 
-\begin{frame}{Installation}
+\begin{frame}[fragile]{Installation}
 	\begin{itemize}
 		\item \href{https://www.r-project.org/}{R (Software)  \includegraphics[scale=0.01]{include/r-logo}}
 		\item \href{https://www.rstudio.com/}{RStudio (GUI = Graphical User Interface = Arbeitsumgebung)  \includegraphics[scale=0.04]{include/rstudio-logo}}
 		\item Alternativ (aber von uns nicht empfohlen): xcode, Visual Studio, Texteditor
 	\end{itemize}
-	
 \end{frame}
 
 %% ================================================================== %%

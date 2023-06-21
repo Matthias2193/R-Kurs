@@ -1,13 +1,10 @@
-\documentclass[xcolor=dvipsnames, aspectratio = 169]{beamer}
-\usepackage[english]{babel} %% english
+\documentclass[aspectratio = 169]{chariteBeamer}
+\usepackage[german]{babel} %% english
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{include/chariteBeamer}
 \usepackage{hyperref}
-\input{include/header2}
 \tikzset{>=latex}
-%\usepackage{amsmath}
-%\usetikzlibrary{shadows}
+
 \usepackage[edges]{forest}
 \usetikzlibrary{positioning}
 \usepackage{biostat}
@@ -18,91 +15,22 @@
 %% ================================================================== %% 
 
 \author[L. Mödl, M. Becher, E. Sprünken]{Lukas Mödl, Matthias Becher, Erin Sprünken} 
-\title{R-Kurs: Tag 2} 
-\date[]{\today}
+\title{Tag 2 -- Daten und Statistik} 
+\date[]{Aktualisiert: \today}
+\place{R-Kurs}
+\email{biometrie-rkurs@charite.de}
 
 %% ================================================================== %% 
-\setbeamercolor*{mycol}{bg=chariteGray, fg=chariteBlue}
 
 \hyphenation{Sam-ples}
 \begin{document}
 
-%% ================================================================== %%
-%% ================================================================== %%
-\setbeamertemplate{footline}{\begin{tikzpicture}
-    \node [inner sep=0pt, anchor=east] (0,0) {
-      \includegraphics[width=\paperwidth,height=0.7cm]{include/charite_footer}};
-    \node [inner sep=0pt, anchor=east] at (-0.5ex,-0ex){};
-\end{tikzpicture}}
 
-\setbeamertemplate{headline}{
-%\leavevmode
-\hspace{-0.49em}\hbox{
-	\begin{beamercolorbox}[wd=1.02\paperwidth,ht=2.25ex,dp=1ex,left]{mycol}%
-    \usebeamerfont{section in head/foot}
-  \end{beamercolorbox}%
-}}
-{
-  \usebackgroundtemplate{ \hspace{-0.5em}\begin{tikzpicture}
-  \node[opacity=0.7, anchor=south] (0,0) {\includegraphics[height=\paperheight, width=1.04\paperwidth]{include/frontmatter.pdf}};
-  \end{tikzpicture}
-} 
-%\frame{\titlepage}
-\begin{frame}
-\centering
-	\vspace{4em}
-	{\Large \textcolor{chariteBlue}{\inserttitle}}\\
-	 \vspace{1em}
-	{\Large \textcolor{black}{\insertauthor \\}} 
-	\vspace{2em}
-	{\footnotesize \textcolor{black}{\insertinstitute \\\vspace{1em} \insertdate}} 
-	\vspace{0em}
-	\begin{figure}[h!]
-		\includegraphics[width=5cm]{include/Charite_Logo.png}
-	\end{figure}
-%	\pgfuseimage{frontUnilogo}
+
+\begin{frame}[plain]
+    \titlepage%
 \end{frame}
-}
-%% ================================================================== %%
-
-\setbeamertemplate{footline}{\begin{tikzpicture}
-    \node [inner sep=0pt, anchor=east] (0,0) {
-      \includegraphics[width=\paperwidth,height=0.7cm]{include/charite_footer}};
-    \node [inner sep=0pt, anchor=east] at (-0.5ex,-0ex) {\tiny \insertframenumber{}$\,$|$\,$\inserttotalframenumber};
-\end{tikzpicture}}
-
-\setbeamertemplate{headline}{%
-%\leavevmode%
-\hspace{-0.49em}\hbox{
-	\begin{beamercolorbox}[wd=.68\paperwidth,ht=2.25ex,dp=1ex,left]{mycol}%
-    \usebeamerfont{section in head/foot}\hspace*{1em}
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.20\paperwidth,ht=2.25ex,dp=1ex,right]{mycol}%
-    \usebeamerfont{author in head/foot}\insertshortauthor
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.14\paperwidth,ht=2.25ex,dp=1ex,center]{mycol}%
-    \usebeamerfont{date in head/foot}\insertdate
-  \end{beamercolorbox}%
-  }
-}
-
-
 \frame{\tableofcontents}
-
-\setbeamertemplate{headline}{%
-%\leavevmode%
-\hspace{-0.49em}\hbox{
-	\begin{beamercolorbox}[wd=.68\paperwidth,ht=2.25ex,dp=1ex,left]{mycol}%
-    \usebeamerfont{section in head/foot}\hspace*{1em}\thesection. \  \insertsectionhead
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.20\paperwidth,ht=2.25ex,dp=1ex,right]{mycol}%
-    \usebeamerfont{author in head/foot}\insertshortauthor
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.14\paperwidth,ht=2.25ex,dp=1ex,center]{mycol}%
-    \usebeamerfont{date in head/foot}\insertdate
-  \end{beamercolorbox}%
-  }
-}
 
 \section{Laden von Daten}
 \begin{frame}[fragile]{Laden}
