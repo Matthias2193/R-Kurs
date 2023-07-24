@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2023.7.24)  24 JUL 2023 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2023.7.24)  24 JUL 2023 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/G
-erman/Day1/day1.tex"
+erman/Day3/day3.tex"
 
 (C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ger
-man/Day1/day1.tex
+man/Day3/day3.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-07-04>
 (C:/Users/Matthias/Documents/localtexmf\tex/latex\chariteBeamer.cls
@@ -1327,15 +1327,23 @@ ut line 112.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
 (Font)              scaled to size 10.95pt on input line 112.
 )
-(C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.st
+(C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/blkarray\blkarray.st
 y
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip66
-\enit@outerparindent=\dimen329
-\enit@toks=\toks56
-\enit@inbox=\box99
-\enit@count@id=\count451
-\enitdp@description=\count452
+Package: blkarray 2015/02/27 v0.07 Block array (dpc)
+\c@BAenumi=\count451
+\BA@col=\count452
+\BA@block@cnt=\count453
+\BA@final@box=\box99
+\BA@first@box=\box100
+\BA@colsep=\dimen329
+\BA@ftn=\toks56
+\BAextrarowheight=\dimen330
+\BAextraheightafterhline=\dimen331
+\BAarrayrulewidth=\dimen332
+\BAdoublerulesep=\dimen333
+\BAfootskip=\dimen334
+\BA@dashbox=\box101
+\BA@ddashbox=\box102
 ) (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/forest\forest.sty
 Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
 
@@ -1386,26 +1394,26 @@ File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shap
 es\pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodepartlowerbox=\box100
-\pgfnodeparttwobox=\box101
-\pgfnodepartthreebox=\box102
-\pgfnodepartfourbox=\box103
-\pgfnodeparttwentybox=\box104
-\pgfnodepartnineteenbox=\box105
-\pgfnodeparteighteenbox=\box106
-\pgfnodepartseventeenbox=\box107
-\pgfnodepartsixteenbox=\box108
-\pgfnodepartfifteenbox=\box109
-\pgfnodepartfourteenbox=\box110
-\pgfnodepartthirteenbox=\box111
-\pgfnodeparttwelvebox=\box112
-\pgfnodepartelevenbox=\box113
-\pgfnodeparttenbox=\box114
-\pgfnodepartninebox=\box115
-\pgfnodeparteightbox=\box116
-\pgfnodepartsevenbox=\box117
-\pgfnodepartsixbox=\box118
-\pgfnodepartfivebox=\box119
+\pgfnodepartlowerbox=\box103
+\pgfnodeparttwobox=\box104
+\pgfnodepartthreebox=\box105
+\pgfnodepartfourbox=\box106
+\pgfnodeparttwentybox=\box107
+\pgfnodepartnineteenbox=\box108
+\pgfnodeparteighteenbox=\box109
+\pgfnodepartseventeenbox=\box110
+\pgfnodepartsixteenbox=\box111
+\pgfnodepartfifteenbox=\box112
+\pgfnodepartfourteenbox=\box113
+\pgfnodepartthirteenbox=\box114
+\pgfnodeparttwelvebox=\box115
+\pgfnodepartelevenbox=\box116
+\pgfnodeparttenbox=\box117
+\pgfnodepartninebox=\box118
+\pgfnodeparteightbox=\box119
+\pgfnodepartsevenbox=\box120
+\pgfnodepartsixbox=\box121
+\pgfnodepartfivebox=\box122
 )))
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
 tikz/libraries\tikzlibraryfit.code.tex
@@ -1419,7 +1427,7 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ibraryintersections.code.tex
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
 ibraryfpu.code.tex)
-\pgf@intersect@solutions=\count453
+\pgf@intersect@solutions=\count454
 )
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
@@ -1434,88 +1442,88 @@ Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
 sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \ID@toks=\toks59
-\ID@count=\count454
+\ID@count=\count455
 )
 \ID@usercommands=\toks60
-\safeloop@depth=\count455
-\safeRKloop@depth=\count456
-\forest@temp@dimen=\dimen330
-\forest@temp@count=\count457
-\forest@n=\count458
-\forest@temp@global@count=\count459
+\safeloop@depth=\count456
+\safeRKloop@depth=\count457
+\forest@temp@dimen=\dimen335
+\forest@temp@count=\count458
+\forest@n=\count459
+\forest@temp@global@count=\count460
 \forest@temp@toks=\toks61
-\forest@temparray@M=\count460
-\forest@temparray@N=\count461
-\forest@global@temparray@M=\count462
-\forest@global@temparray@N=\count463
-\forest@isnum@count=\count464
-\forest@isdim@nonintpart=\count465
-\forest@isdim@dimen=\dimen331
-\forest@sort@m=\count466
-\forest@sort@k=\count467
-\forest@sort@p=\count468
+\forest@temparray@M=\count461
+\forest@temparray@N=\count462
+\forest@global@temparray@M=\count463
+\forest@global@temparray@N=\count464
+\forest@isnum@count=\count465
+\forest@isdim@nonintpart=\count466
+\forest@isdim@dimen=\dimen336
+\forest@sort@m=\count467
+\forest@sort@k=\count468
+\forest@sort@p=\count469
 \bracket@content=\toks62
 \bracket@afterthought=\toks63
-\forest@node@maxid=\count469
-\forest@process@left@M=\count470
-\forest@process@left@N=\count471
-\forest@process@right@M=\count472
-\forest@process@right@N=\count473
-\forest@process@saved@M=\count474
-\forest@process@saved@N=\count475
-\forest@process@result@M=\count476
-\forest@process@result@N=\count477
-\forest@process@n=\count478
+\forest@node@maxid=\count470
+\forest@process@left@M=\count471
+\forest@process@left@N=\count472
+\forest@process@right@M=\count473
+\forest@process@right@N=\count474
+\forest@process@saved@M=\count475
+\forest@process@saved@N=\count476
+\forest@process@result@M=\count477
+\forest@process@result@N=\count478
+\forest@process@n=\count479
 \forest@nodewalk@branch@toks=\toks64
 \forest@nodewalk@shortsteps@resolution=\toks65
 \forest@do@dynamics=\toks66
-\forest@box=\box120
-\forest@xg=\dimen332
-\forest@yg=\dimen333
-\forest@xs=\dimen334
-\forest@ys=\dimen335
+\forest@box=\box123
+\forest@xg=\dimen337
+\forest@yg=\dimen338
+\forest@xs=\dimen339
+\forest@ys=\dimen340
 \forest@pi@toks=\toks67
 \forest@segment@toks=\toks68
 \forest@PIi@toks=\toks69
 \forest@PIii@toks=\toks70
 \forest@copy@in=\read5
 \forest@copy@out=\write5
-\forest@externalize@max@outer@n=\count479
-\forest@externalize@inner@n=\count480
+\forest@externalize@max@outer@n=\count480
+\forest@externalize@inner@n=\count481
 )
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/forest\forest-lib-ed
 ges.sty
 Package: forest-lib-edges 2016/12/05 v0.1.1
 )
 (C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ger
-man/Day1\biostat.sty
+man/Day3\biostat.sty
 Package: biostat 2021/05/17
-\c@lemma=\count481
-\c@proof=\count482
-\c@definition=\count483
-\c@corollary=\count484
+\c@lemma=\count482
+\c@proof=\count483
+\c@definition=\count484
+\c@corollary=\count485
 )
-No file day1.aux.
-\openout1 = `day1.aux'.
+No file day3.aux.
+\openout1 = `day3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1554,16 +1562,16 @@ LaTeX Font Info:    ... okay on input line 28.
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
 .mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count485
-\scratchdimen=\dimen336
-\scratchbox=\box121
-\nofMPsegments=\count486
-\nofMParguments=\count487
+\scratchcounter=\count486
+\scratchdimen=\dimen341
+\scratchbox=\box124
+\nofMPsegments=\count487
+\nofMParguments=\count488
 \everyMPshowfont=\toks71
-\MPscratchCnt=\count488
-\MPscratchDim=\dimen337
-\MPnumerator=\count489
-\makeMPintoPDFobject=\count490
+\MPscratchCnt=\count489
+\MPscratchDim=\dimen342
+\MPnumerator=\count490
+\makeMPintoPDFobject=\count491
 \everyMPtoPDFconversion=\toks72
 )
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
@@ -1576,83 +1584,83 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 s.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 26.
 \@outlinefile=\write6
-\openout6 = `day1.out'.
+\openout6 = `day3.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 26.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 26.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 28
+(Font)              `pureletters' in the math version `normal' on input line 26
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/mathkerncmss/m/sl --> T1/FiraSans-OsF/m/it on input
- line 28.
+ line 26.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 28.
+(Font)              `pureletters' in the math version `bold' on input line 26.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/FiraSans-OsF/m/it on inpu
-t line 28.
+t line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 28.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/FiraSans-OsF/m/n on input line 28.
+(Font)                  OT1/cmss/m/n --> T1/FiraSans-OsF/m/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/FiraSans-OsF/m/n on input line 28.
+(Font)                  OT1/cmss/bx/n --> T1/FiraSans-OsF/m/n on input line 26.
 
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 28.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/FiraSans-OsF/m/it on input line 28.
+(Font)                  OT1/cmr/m/it --> T1/FiraSans-OsF/m/it on input line 26.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/FiraSans-OsF/m/it on input line 28
+(Font)                  OT1/cmr/bx/it --> T1/FiraSans-OsF/m/it on input line 26
 .
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 28.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  T1/FiraSans-OsF/m/n --> T1/FiraSans-OsF/b/n on input li
-ne 28.
+ne 26.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/FiraSans-OsF/m/it --> T1/FiraSans-OsF/b/it on input 
-line 28.
+line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 28.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  T1/FiraSans-OsF/b/n --> T1/FiraSans-OsF/b/n on input li
-ne 28.
+ne 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  T1/FiraSans-OsF/m/n --> T1/FiraSans-OsF/b/n on input li
-ne 28.
+ne 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  T1/FiraSans-OsF/m/it --> T1/FiraSans-OsF/b/it on input 
-line 28.
+line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 28.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 26.
+LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 26.
 
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `boldpureletters' in the math version `normal' on input lin
-e 28.
+e 26.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `norma
 l'
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/FiraSans-OsF/bx/it on inp
-ut line 28.
+ut line 26.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `boldpureletters' in the math version `bold' on input line 
-28.
+26.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `bold'
 
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/FiraSans-OsF/bx/it on inp
-ut line 28.
+ut line 26.
 
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/translator\translato
 r-basic-dictionary-English.dict
@@ -1678,27 +1686,27 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-\c@lstlisting=\count491
-\c@mv@tabular=\count492
-\c@mv@boldtabular=\count493
+\c@lstlisting=\count492
+\c@mv@tabular=\count493
+\c@mv@boldtabular=\count494
 
-No file day1.nav.
+No file day3.nav.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <6> not available
 (Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
-ut line 28.
+ut line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 6.0pt on input line 28.
+(Font)              scaled to size 6.0pt on input line 26.
 <ChariteLogo.png, id=48, 1690.315pt x 625.33624pt>
 File: ChariteLogo.png Graphic file (type png)
 <use ChariteLogo.png>
-Package pdftex.def Info: ChariteLogo.png  used on input line 28.
+Package pdftex.def Info: ChariteLogo.png  used on input line 26.
 (pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 
 (C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1707,75 +1715,75 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/it' in size <6> not available
 
 (Font)              Font shape `T1/FiraSans-OsF/regular/it' tried instead on in
-put line 28.
+put line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/it' will be
-(Font)              scaled to size 6.0pt on input line 28.
+(Font)              scaled to size 6.0pt on input line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/it' in size <5> not available
 
 (Font)              Font shape `T1/FiraSans-OsF/regular/it' tried instead on in
-put line 28.
+put line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/it' will be
-(Font)              scaled to size 5.0pt on input line 28.
+(Font)              scaled to size 5.0pt on input line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bx/it' in size <6> not availabl
 e
 (Font)              Font shape `T1/FiraSans-OsF/b/it' tried instead on input li
-ne 28.
+ne 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/it' in size <6> not available
 
 (Font)              Font shape `T1/FiraSans-OsF/bold/it' tried instead on input
- line 28.
+ line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/it' will be
-(Font)              scaled to size 6.0pt on input line 28.
+(Font)              scaled to size 6.0pt on input line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bx/it' in size <5> not availabl
 e
 (Font)              Font shape `T1/FiraSans-OsF/b/it' tried instead on input li
-ne 28.
+ne 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/it' in size <5> not available
 
 (Font)              Font shape `T1/FiraSans-OsF/bold/it' tried instead on input
- line 28.
+ line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/it' will be
-(Font)              scaled to size 5.0pt on input line 28.
+(Font)              scaled to size 5.0pt on input line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <5> not available
 (Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
-ut line 28.
+ut line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 5.0pt on input line 28.
+(Font)              scaled to size 5.0pt on input line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <6> not available
 (Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
-line 28.
+line 26.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 6.0pt on input line 28.
+(Font)              scaled to size 6.0pt on input line 26.
 <front.jpg, id=51, 322.20375pt x 451.6875pt>
 File: front.jpg Graphic file (type jpg)
 <use front.jpg>
-Package pdftex.def Info: front.jpg  used on input line 32.
+Package pdftex.def Info: front.jpg  used on input line 33.
 (pdftex.def)             Requested size: 150.23616pt x 204.86337pt.
 File: ChariteLogo.png Graphic file (type png)
 <use ChariteLogo.png>
-Package pdftex.def Info: ChariteLogo.png  used on input line 32.
+Package pdftex.def Info: ChariteLogo.png  used on input line 33.
 (pdftex.def)             Requested size: 84.52069pt x 31.26863pt.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <8> not available
 (Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
-ut line 32.
+ut line 33.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 32.
+(Font)              scaled to size 8.0pt on input line 33.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <12> not available
 
 (Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
-ut line 32.
+ut line 33.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
+(Font)              scaled to size 12.0pt on input line 33.
 <Logo_large.png, id=52, 5396.16pt x 4609.22pt>
 File: Logo_large.png Graphic file (type png)
 <use Logo_large.png>
-Package pdftex.def Info: Logo_large.png  used on input line 32.
+Package pdftex.def Info: Logo_large.png  used on input line 33.
 (pdftex.def)             Requested size: 80.9389pt x 69.13531pt.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <9> not available
 (Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
-ut line 32.
+ut line 33.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 32.
+(Font)              scaled to size 9.0pt on input line 33.
 
 [1
 
@@ -1783,24 +1791,404 @@ LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
 Matthias/Documents/localtexmf/tex/latex/front.jpg> <C:/Users/Matthias/Documents
 /localtexmf/tex/latex/ChariteLogo.png> <C:/Users/Matthias/Documents/localtexmf/
 tex/latex/Logo_large.png>]
-\openout4 = `day1.vrb'.
+No file day3.toc.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <4> not available
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
+ut line 34.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 4.0pt on input line 34.
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 34.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+[2
 
- (day1.vrb
-! TeX capacity exceeded, sorry [grouping levels=255].
-\labelenumi ->{
-               \labelenumi }
-l.3 		\item T
-             ag
-If you really absolutely need more capacity,
-you can ask a wizard to enlarge me.
+]
+\openout4 = `day3.vrb'.
 
- 
+ (day3.vrb
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/it' in size <10.95> not avail
+able
+(Font)              Font shape `T1/FiraSans-OsF/regular/it' tried instead on in
+put line 3.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/it' will be
+(Font)              scaled to size 10.95pt on input line 3.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/it' in size <8> not available
+
+(Font)              Font shape `T1/FiraSans-OsF/regular/it' tried instead on in
+put line 3.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/it' will be
+(Font)              scaled to size 8.0pt on input line 3.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bx/it' in size <10.95> not avai
+lable
+(Font)              Font shape `T1/FiraSans-OsF/b/it' tried instead on input li
+ne 3.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/it' in size <10.95> not avail
+able
+(Font)              Font shape `T1/FiraSans-OsF/bold/it' tried instead on input
+ line 3.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/it' will be
+(Font)              scaled to size 10.95pt on input line 3.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bx/it' in size <8> not availabl
+e
+(Font)              Font shape `T1/FiraSans-OsF/b/it' tried instead on input li
+ne 3.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/it' in size <8> not available
+
+(Font)              Font shape `T1/FiraSans-OsF/bold/it' tried instead on input
+ line 3.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/it' will be
+(Font)              scaled to size 8.0pt on input line 3.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+.
+
+(C:\Users\Matthias\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <14.4> not availab
+le
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
+ut line 50.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 50.
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 50.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+
+[3
+
+]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 63.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [4
+
+]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//OneSampleTtest.png, id=84, 319.94531pt x 138.5175pt>
+File: figures//OneSampleTtest.png Graphic file (type png)
+<use figures//OneSampleTtest.png>
+Package pdftex.def Info: figures//OneSampleTtest.png  used on input line 3.
+(pdftex.def)             Requested size: 319.94452pt x 138.51715pt.
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 69.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [5
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//OneSampleTtest.png>]
+\openout4 = `day3.vrb'.
+
+
+(day3.vrb
+<figures//TwoSampleTtest.png, id=92, 431.36156pt x 140.77594pt>
+File: figures//TwoSampleTtest.png Graphic file (type png)
+<use figures//TwoSampleTtest.png>
+Package pdftex.def Info: figures//TwoSampleTtest.png  used on input line 3.
+(pdftex.def)             Requested size: 431.3605pt x 140.77557pt.
+
+Overfull \hbox (4.56915pt too wide) in paragraph at lines 3--4
+ [] 
+ []
+
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 76.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [6
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//TwoSampleTtest.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//tabledata.png, id=100, 268.75406pt x 69.25874pt>
+File: figures//tabledata.png Graphic file (type png)
+<use figures//tabledata.png>
+Package pdftex.def Info: figures//tabledata.png  used on input line 7.
+(pdftex.def)             Requested size: 213.39566pt x 54.99278pt.
+<figures//chisq.png, id=101, 286.06876pt x 73.77562pt>
+File: figures//chisq.png Graphic file (type png)
+<use figures//chisq.png>
+Package pdftex.def Info: figures//chisq.png  used on input line 10.
+(pdftex.def)             Requested size: 213.39566pt x 55.03436pt.
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 90.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [7
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//tabledata.png> <C:/Users/Matthias/OneDrive - Charité - Univ
+ersitätsmedizin Berlin/R-Kurs/German/Day3/figures//chisq.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 108.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [8
+
+]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//LinearRegressionSummary.png, id=118, 392.21532pt x 246.9225pt>
+File: figures//LinearRegressionSummary.png Graphic file (type png)
+<use figures//LinearRegressionSummary.png>
+Package pdftex.def Info: figures//LinearRegressionSummary.png  used on input li
+ne 9.
+(pdftex.def)             Requested size: 169.47519pt x 106.69783pt.
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 122.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [9
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//LinearRegressionSummary.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//LinearRegressionPlot.png, id=126, 411.03563pt x 459.21562pt>
+File: figures//LinearRegressionPlot.png Graphic file (type png)
+<use figures//LinearRegressionPlot.png>
+Package pdftex.def Info: figures//LinearRegressionPlot.png  used on input line 
+10.
+(pdftex.def)             Requested size: 165.54027pt x 184.9429pt.
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 136.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [10
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//LinearRegressionPlot.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+
+! LaTeX Error: File `KM1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 		\includegraphics[height=5cm]{KM1}
+                                       
+? 
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 146.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [11
+
+]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//KM2.png, id=140, 444.91219pt x 458.46281pt>
+File: figures//KM2.png Graphic file (type png)
+<use figures//KM2.png>
+Package pdftex.def Info: figures//KM2.png  used on input line 7.
+(pdftex.def)             Requested size: 151.86555pt x 156.49014pt.
+)
+Overfull \vbox (11.42087pt too high) detected at line 156
+ []
+
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 156.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+[12
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//KM2.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//KM3.png, id=148, 444.91219pt x 458.46281pt>
+File: figures//KM3.png Graphic file (type png)
+<use figures//KM3.png>
+Package pdftex.def Info: figures//KM3.png  used on input line 7.
+(pdftex.def)             Requested size: 151.86555pt x 156.49014pt.
+)
+Overfull \vbox (11.42087pt too high) detected at line 166
+ []
+
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 166.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+[13
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//KM3.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//LogisticRegressionSummary.png, id=157, 390.70969pt x 234.8775pt>
+File: figures//LogisticRegressionSummary.png Graphic file (type png)
+<use figures//LogisticRegressionSummary.png>
+Package pdftex.def Info: figures//LogisticRegressionSummary.png  used on input 
+line 8.
+(pdftex.def)             Requested size: 189.32108pt x 113.81102pt.
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 177.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [14
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//LogisticRegressionSummary.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//OneWay.png, id=165, 295.1025pt x 60.97781pt>
+File: figures//OneWay.png Graphic file (type png)
+<use figures//OneWay.png>
+Package pdftex.def Info: figures//OneWay.png  used on input line 6.
+(pdftex.def)             Requested size: 295.10176pt x 60.97765pt.
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 186.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [15
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//OneWay.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//TwoWay.png, id=173, 371.13657pt x 68.50594pt>
+File: figures//TwoWay.png Graphic file (type png)
+<use figures//TwoWay.png>
+Package pdftex.def Info: figures//TwoWay.png  used on input line 3.
+(pdftex.def)             Requested size: 371.13565pt x 68.50577pt.
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 192.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+
+[16
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//TwoWay.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//Interaction.png, id=181, 421.575pt x 82.05656pt>
+File: figures//Interaction.png Graphic file (type png)
+<use figures//Interaction.png>
+Package pdftex.def Info: figures//Interaction.png  used on input line 3.
+(pdftex.def)             Requested size: 421.57396pt x 82.05635pt.
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 198.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [17
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//Interaction.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb)
+Overfull \vbox (10.89723pt too high) detected at line 227
+ []
+
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 227.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+[18
+
+]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb
+<figures//pakete.png, id=196, 483.8075pt x 123.96312pt>
+File: figures//pakete.png Graphic file (type png)
+<use figures//pakete.png>
+Package pdftex.def Info: figures//pakete.png  used on input line 3.
+(pdftex.def)             Requested size: 426.79135pt x 109.35837pt.
+)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 233.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [19
+
+ <C:/Users/Matthias/OneDrive - Charité - Universitätsmedizin Berlin/R-Kurs/Ge
+rman/Day3/figures//pakete.png>]
+\openout4 = `day3.vrb'.
+
+ (day3.vrb)
+File: ChariteLogo.png Graphic file (type png)
+<use ChariteLogo.png>
+Package pdftex.def Info: ChariteLogo.png  used on input line 246.
+(pdftex.def)             Requested size: 42.24745pt x 15.62955pt.
+ [20
+
+]
+\tf@nav=\write7
+\openout7 = `day3.nav'.
+
+\tf@toc=\write8
+\openout8 = `day3.toc'.
+
+\tf@snm=\write9
+\openout9 = `day3.snm'.
+
+ (day3.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `day3.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `day3.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  771D26CB57B59C554E2EAD43F97B8F97;360.
+ ) 
 Here is how much of TeX's memory you used:
- 45568 strings out of 478338
- 1059700 string characters out of 2835284
- 1405382 words of memory out of 3000000
- 63219 multiletter control sequences out of 15000+600000
- 633253 words of font info for 60 fonts, out of 8000000 for 9000
+ 45885 strings out of 478338
+ 1066155 string characters out of 2835284
+ 1402532 words of memory out of 3000000
+ 63423 multiletter control sequences out of 15000+600000
+ 726116 words of font info for 89 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 264i,13n,136p,1697b,852s stack positions out of 10000i,1000n,20000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 142i,19n,136p,1697b,852s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\Matthias\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+ctt1440.pk> <C:\Users\Matthias\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1095.pk>{C:/Users/Matthias/AppData/Local/Programs/MiKTeX/fonts/enc/
+dvips/fira/fir_iln36p.enc}<C:/Users/Matthias/AppData/Local/Programs/MiKTeX/font
+s/type1/public/fira/FiraSans-Bold.pfb><C:/Users/Matthias/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/fira/FiraSans-Regular.pfb><C:/Users/Matthias/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on day3.pdf (20 pages, 875115 bytes).
+PDF statistics:
+ 298 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
+

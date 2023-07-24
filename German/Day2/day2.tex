@@ -45,8 +45,8 @@
 Wenn man CSVs in R lädt kann man verschiedene Parameter einstellen, um der Funktion zu sagen wie die CSV formatiert ist. Die wichtigsten werden hier vorgestellt:
   \begin{itemize}
 	  \item \verb +header(TRUE/FALSE):+ Zeigt an, ob in der CSV Spaltennamen in der ersten Reihe stehen
-	  \item \verb +sep:+Welches Zeichen wird verwendet um Spalten zu trennen. Default ist ",". Es werden aber auch häufig ";" oder "\textbackslash t" verwendet
-	  \item \verb +dec:+Welches Zeichen wird bei Dezimalzahlen verwendet "." oder ","
+	  \item \verb +sep:+Welches Zeichen wird verwendet um Spalten zu trennen. Default ist ",". Es werden aber auch häufig ";"  \text{oder} "\textbackslash t" verwendet
+	  \item \verb +dec:+Welches Zeichen wird bei Dezimalzahlen verwendet "." \text{oder} ","
 	  \item	Beispiel: \verb +read.csv("data.csv", header=TRUE, sep=";", dec=",")+
   \end{itemize}
 \end{frame}
@@ -174,12 +174,9 @@ Dazu gibt es ausdrücke, die weitere Informationen geben:
 \begin{itemize}
 			\item all(x) $\Leftrightarrow$ prüft, ob ein logischer Vektor x an allen Elementen \verb+TRUE+ ist
 			\item any(x) $\Leftrightarrow$ prüft, ob ein logischer Vektor x and mindestens einer Stelle \verb+TRUE+ ist
-			\item which(x) $Leftrightarrow$ prüft, an welchen Stellen ein logischer Vektor x \verb+TRUE+ ist
+			\item which(x) $\Leftrightarrow$ prüft, an welchen Stellen ein logischer Vektor x \verb+TRUE+ ist
 \end{itemize}
-Beispiel:
-	\begin{itemize}
-		\item  \verb+data[data$Sex != "M" & data$Age > 50,]+
-	\end{itemize}
+Beispiel:  \verb+data[data$Sex != "M" & data$Age > 50,]+
 \end{frame}
 
 %% ================================================================== %%
@@ -233,36 +230,6 @@ Beispiel:
 			
 	\begin{center}
 		\includegraphics[height=6.5cm]{Barplot}
-	\end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Kaplan-Meier Plot}
-	\begin{itemize}
-		\item \verb+library(survival)+ \\ \verb+data_vet <- veteran+ \\ \verb+km_fit <- survfit(Surv(time, status) ~ 1, data=data_vet)+ \\ \verb+plot(km_fit)+
-	\end{itemize}
-			
-	\begin{center}
-		\includegraphics[height=5cm]{KM1}
-	\end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Kaplan-Meier Plot}
-	\begin{itemize}
-		\item \verb+library(survminer)+ \\ \verb+ggsurvplot(km_fit)+
-	\end{itemize}
-			
-	\begin{center}
-		\includegraphics[height=5.5cm]{KM2}
-	\end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Kaplan-Meier Plot}
-	\begin{itemize}
-		\item \verb+km_fit <- survfit(Surv(time, status) ~ trt, data=data_vet)+ \\ \verb+ggsurvplot(km_fit)+
-	\end{itemize}
-			
-	\begin{center}
-		\includegraphics[height=5.5cm]{KM3}
 	\end{center}
 \end{frame}
 

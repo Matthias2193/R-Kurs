@@ -113,7 +113,7 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 	\begin{itemize}
 		\item \verb"model <- lm(Weight~Age+Sex+Height+Klinik, data =data)"
 		\item \verb+summary(model)+
-		\item Anmerkung: "0 +" am Anfang der Formel führt zu einer Regression ohne Intercept 
+		\item Anmerkung: "0 +" \text{am} Anfang der Formel führt zu einer Regression ohne Intercept 
 	\end{itemize}
 			
 	\begin{center}
@@ -133,6 +133,36 @@ Anmerkung: Per default nimmt R beim Zwei-Stichproben-t-Test ungleiche Varianz an
 			\includegraphics[height=6.5cm]{LinearRegressionPlot}
 		\end{column}
 	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Kaplan-Meier Plot}
+	\begin{itemize}
+		\item \verb+library(survival)+ \\ \verb+data_vet <- veteran+ \\ \verb+km_fit <- survfit(Surv(time, status) ~ 1, data=data_vet)+ \\ \verb+plot(km_fit)+
+	\end{itemize}
+			
+	\begin{center}
+		\includegraphics[height=5cm]{KM1}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Kaplan-Meier Plot}
+	\begin{itemize}
+		\item \verb+library(survminer)+ \\ \verb+ggsurvplot(km_fit)+
+	\end{itemize}
+			
+	\begin{center}
+		\includegraphics[height=5.5cm]{KM2}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Kaplan-Meier Plot}
+	\begin{itemize}
+		\item \verb+km_fit <- survfit(Surv(time, status) ~ trt, data=data_vet)+ \\ \verb+ggsurvplot(km_fit)+
+	\end{itemize}
+			
+	\begin{center}
+		\includegraphics[height=5.5cm]{KM3}
+	\end{center}
 \end{frame}
 
 \begin{frame}[fragile]{Logistische Regression}
